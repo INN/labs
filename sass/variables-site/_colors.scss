@@ -43,7 +43,7 @@ $color__text-input: #666;
 $color__text-input-focus: #111;
 $color__link: $primary;
 $color__link-visited: $color__link;
-$color__link-hover: darken($color__link, 30%);
+$color__link-hover: lighten($color__link, 20%);
 $color__text-main: $neutral2;
 
 $color__border-button: #ccc #ccc #bbb;

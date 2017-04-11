@@ -9,13 +9,14 @@ section {
 		&.intro {
 			position:fixed;
 			background-color: $black;
-			background-image: url(images/stickies.jpg);
+			background-image: url(images/INN-Lab-Hero-01.svg);
 			background-size:cover;
-			-webkit-filter: blur(5px);
-			-moz-filter: blur(5px);
-			-o-filter: blur(5px);
-			-ms-filter: blur(5px);
-			filter: blur(5px);
+			background-position:center center;
+			// -webkit-filter: blur(5px);
+			// -moz-filter: blur(5px);
+			// -o-filter: blur(5px);
+			// -ms-filter: blur(5px);
+			// filter: blur(5px);
 		}
 
 		&.intro-spacer {
