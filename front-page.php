@@ -16,38 +16,79 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-		<?php
-		$homepage_sections = get_theme_mod( 'largo_homepage_layout_settings', 5 );
-		if ( $homepage_sections || is_customize_preview() ) {
-			$count = 1;
-			while ( $count <= $homepage_sections ) {
-				$columns = get_theme_mod( "largo_homepage_layout_settings_$count", 5 );
-				$column_count = 1;
-				echo '<div class="column" style="border: solid 1px blue; margin: 1em; padding: 1em;">';
-				echo $columns;
-				while ( $column_count <= $columns ) {
-					?>
-					<div class="panel-placeholder" style="border: dashed 1px red; padding: 1em; margin: 1em;">
-						<?php if ( is_active_sidebar( "section-$count-column-$column_count" ) ) : ?>
-							<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-								<?php dynamic_sidebar( "section-$count-column-$column_count" ); ?>
-							</div><!-- #primary-sidebar -->
+			<section class="section intro">
+			</section>
+			<section id="front" class="section transparent">
+				<div class="inner">
+					<div class="abs-center">
+						<!--INN Labs works with newsroom technologists to build the future of nonprofit news.-->
+						<?php
+							$description = get_bloginfo( 'description', 'display' );
+							if ( $description || is_customize_preview() ) : ?>
+								<div class="highlight-line site-description"><?php echo $description; /* WPCS: xss ok. */ ?></div>
 						<?php endif; ?>
+						<ul>
+							<li><a href="#learn-more" class="button"><span>Learn more</span></a></li>
+							<li><a href="http://inn.us1.list-manage.com/subscribe?u=81670c9d1b5fbeba1c29f2865&id=1476113985" target="_blank"  class="button"><span>Get Updates</span></a></li>
+						</ul>
 					</div>
+				</div>
+			</section>			  
 
-					<?php
-					$column_count++;
-				}
-				echo '</div>';
-				$count++;
-			}
-		}
-		?>
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'largo' ); ?></button>
+				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+			</nav> <!-- #site-navigation -->
+
+			<section class="section">
+				<div class="inner">
+					<div id="learn-more" class="content">
+						<p>They often don’t consider the <b>performance implications</b> of adding third party services to their sites. How much “weight” does any one script add to the page? How much longer will users be waiting for the site to load? How does this impact low-bandwidth and mobile audience?</p>
+					</div>
+					<div class="content three-up">
+						<div>
+							<img src="http://placehold.it/350x150" width="100%"/>
+							<h3>Largo Collective</h3>
+							<p>Largo is a premium WordPress framework for news websites. Built and maintained by the INN Labs, Largo powers news operations around the world. </p>
+						</div>
+						<div>
+							<img src="http://placehold.it/350x150" width="100%"/>
+							<h3>WordPress Plugins</h3>
+							<p>They often don’t consider the <b>performance implications</b> of adding third party services to their sites. How much “weight” does any one script add to the page? How much longer will users be waiting for the site to load? How does this impact low-bandwidth and mobile audience?</p>
+						</div>
+						<div>
+							<img src="http://placehold.it/350x150" width="100%"/>
+							<h3>Custom Design &amp; Development</h3>
+							<p>They often don’t consider the <b>performance implications</b> of adding third party services to their sites. How much “weight” does any one script add to the page? How much longer will users be waiting for the site to load? How does this impact low-bandwidth and mobile audience?</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	<script>
+	jQuery(document).ready(function(){
+		var $ = jQuery;
+		$('a[href*="#"]:not([href="#"])').click(function() {
+	      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	        var target = $(this.hash);
+	        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	        if (target.length) {
+	          $('html, body').animate({
+	            scrollTop: target.offset().top
+	          }, 500);
+	          return false;
+	        }
+	      }
+	    });
+	});	  
+	</script>
+
+
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();
+
+

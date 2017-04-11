@@ -7,3 +7,30 @@
 ## Menus
 --------------------------------------------------------------*/
 @import "menus";
+
+
+/*--------------------------------------------------------------
+## Labs
+--------------------------------------------------------------*/
+.site-header {
+	position:fixed;
+	width:100%;
+	top:0;
+	z-index:9;
+	border-top:18px solid #000;
+
+	.tab {
+	    max-width: 220px;
+		margin-left:18px;
+		margin-top: -18px;
+		background-color:#000;
+
+		&:hover {
+			background-color:$primary;
+		} 
+
+		img {
+			width:100%;
+		}
+	}
+}

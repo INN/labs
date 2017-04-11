@@ -1,0 +1,18 @@
+.three-up {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+
+	div {
+		margin:0 1em;
+		width:100%;
+
+		&:first-of-type {
+			margin-left:0;
+		}
+
+		&:last-of-type {
+			margin-right:0;
+		}
+	}
+}
