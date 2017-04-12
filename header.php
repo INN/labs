@@ -30,24 +30,23 @@
 				<div class="tab">
 			    	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/labs-logo-white.png" alt="<?php bloginfo( 'name' ); ?>" /></a>
 			    </div>
+			    <nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'largo' ); ?></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+				</nav> <!-- #site-navigation -->
 			<?php else : ?>
 				<div class="tab">
 			    	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/labs-logo-white.png" alt="<?php bloginfo( 'name' ); ?>" /></a>
 			    </div>
+			    <nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'largo' ); ?></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+				</nav> <!-- #site-navigation -->
 			<?php
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<!-- nav in front-page.php -->
-			<?php else : ?>
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'largo' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav> <!-- #site-navigation -->
-		<?php
-		endif; ?>
+		
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

@@ -35,7 +35,7 @@ get_header(); ?>
 				</div>
 			</section>			  
 
-			<nav id="site-navigation" class="main-navigation" role="navigation">
+			<nav class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'largo' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav> <!-- #site-navigation -->
@@ -69,8 +69,22 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 	<script>
+	// show sticky nav
+	var win_height;
+	function showStickyNav($){
+		if($(this).scrollTop() >= win_height-90) {
+		    $('#site-navigation').slideDown('fast');
+		} else {
+			$('#site-navigation').slideUp('fast');
+		}
+		
+	}
+
 	jQuery(document).ready(function(){
 		var $ = jQuery;
+		win_height = jQuery(window).height();
+
+		// smooth scroll to anchor
 		$('a[href*="#"]:not([href="#"])').click(function() {
 	      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	        var target = $(this.hash);
@@ -83,7 +97,18 @@ get_header(); ?>
 	        }
 	      }
 	    });
-	});	  
+
+	    showStickyNav($);
+	});	
+
+	jQuery(window).resize(function(){  
+		win_height = jQuery(window).height();
+		showStickyNav(jQuery);
+	});
+
+	jQuery(window).scroll(function() {  
+		showStickyNav(jQuery);
+	});
 	</script>
 
 
