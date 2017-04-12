@@ -46,6 +46,10 @@ section {
 			min-height:100vh;
 		}
 
+		.abs-center {
+			padding:0 3em;
+		}
+
 		p {
 		    font-size: 1.75em;
 		    margin: 0;
@@ -67,13 +71,13 @@ section {
 
 	.highlight-line {
 		display:inline;
-		background-color:#fff;
-		color:#000;
+		background-color:$white;
+		color:$black;
 		padding:10px;
 		font-family:$font__headings;
 		font-weight: bold;
-		line-height:2;
-		font-size:2.75em;
+		line-height:1.8;
+		font-size:2.5em;
 	}
 
 	.site-header .main-navigation {
@@ -93,6 +97,7 @@ section {
 	#learn-more {
 		p {
 	    	font-size: 1.5em;
+	    	color:$black;
 	    }
 	}
 }
@@ -101,27 +106,28 @@ section {
 	width:100%;
 	display:inline-block;
 	padding:.75em;
-	background-color:#000;
+	background-color:$black;
 	text-transform: uppercase;
 	font-family:$font__buttons;
 	font-weight: bold;
     letter-spacing: .05em;
+    text-shadow:0px 0px 2px transparentize($black,.7);
 
     &:hover {
-		background-color: #08c8ff;
+		background-color: $primary;
 		cursor:pointer;
 	}
 }
 a.button,
 a.button:hover {
-	color:#fff;
+	color:$white;
 	text-decoration: none;
 }
 
 .content {
 	margin: 0 auto;
     padding: 3em;
-    background-color: #fff;
+    background-color: $white;
     line-height:1.5;
 }
 .abs-center {
@@ -138,13 +144,90 @@ a.button:hover {
 	position:fixed;
 }
 
+#promos {
+	div {
+		min-height:400px;
+		width:100%;
+		margin:0;
+		position:relative;
+		background-size:cover;
+		background-position:center center;
+
+		.overlay {
+			position:absolute;
+			top:0;
+			bottom:0;
+			width:100%;
+		}
+
+		h3 {
+			text-align: center;
+			color:$white;
+			font-size:2em;
+			transform:translateY(-100%);
+		}
+
+		&.promo-largo {
+			background-image:url(images/promo-largo.jpg);
+
+			.overlay {
+				background-color:transparentize($accent5,.2);
+			}
+		}
+		&.promo-revenue {
+			background-image:url(images/promo-revenue.jpg);
+
+			.overlay {
+				background-color:transparentize($primary,.2);
+			}
+		}
+		&.promo-custom {
+			background-image:url(images/promo-custom.jpg);
+
+			.overlay {
+				background-color:transparentize($accent7,.2);
+			}
+		}
+	}
+}
+
+#featured-blogs {
+	h4 {
+		margin-top:0;
+	}
+}
+
+#contact-cta {
+	background-color:$accent2;
+
+	.inner {
+		padding:3em;
+
+		.button {
+			display:block;
+			max-width:250px;
+
+			&:hover {
+				background-color: $primary;
+			}
+		}
+	}
+}
+
 .site-footer {
-	background-color:#000;
+	background-color:$black;
 	color:$white;
 	text-align:center;
 	position: relative;
     padding: 60px;
 
+    a, a:visited {
+    	color:$white;
+
+    	&:hover {
+    		color:$primary;
+    	}
+    }
 }
 
 @media screen and (max-width: 768px) {

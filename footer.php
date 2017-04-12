@@ -10,14 +10,23 @@
  */
 
 ?>
+		<section id="contact-cta" class="section">
+			<div class="inner">
+				<div>
+					<h1 class="highlight-line site-description">Let's talk ideas.</h1>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact" class="button"><span>What's your project?</span></a>
+				</div>
+			</div>
+		</section>
 
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'largo' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'largo' ), 'WordPress' ); ?></a>
+			<!-- <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'largo' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'largo' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'largo' ), 'largo', '<a href="https://automattic.com/" rel="designer">inn_nerds</a>' ); ?>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'largo' ), 'largo', '<a href="https://automattic.com/" rel="designer">inn_nerds</a>' ); ?> -->
+			<p>INN Labs is brought to you by the <a href="//inn.org">Institute for Nonprofit News</a>.</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

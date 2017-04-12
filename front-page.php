@@ -25,11 +25,12 @@ get_header(); ?>
 						<?php
 							$description = get_bloginfo( 'description', 'display' );
 							if ( $description || is_customize_preview() ) : ?>
-								<div class="highlight-line site-description"><?php echo $description; /* WPCS: xss ok. */ ?></div>
+								<h1 class="highlight-line site-description"><?php echo $description; /* WPCS: xss ok. */ ?></h1>
 						<?php endif; ?>
 						<ul>
-							<li><a href="#learn-more" class="button"><span>Learn more</span></a></li>
-							<li><a href="http://inn.us1.list-manage.com/subscribe?u=81670c9d1b5fbeba1c29f2865&id=1476113985" target="_blank"  class="button"><span>Get Updates</span></a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>contact" class="button"><span>Work with us</span></a></li>
+							<li><a href="#learn-more" class="button secondary"><span>Learn more</span></a></li>
+							<!-- <li><a href="http://inn.us1.list-manage.com/subscribe?u=81670c9d1b5fbeba1c29f2865&id=1476113985" target="_blank"  class="button"><span>Get Updates</span></a></li> -->
 						</ul>
 					</div>
 				</div>
@@ -41,25 +42,41 @@ get_header(); ?>
 			</nav> <!-- #site-navigation -->
 
 			<section class="section">
-				<div class="inner">
-					<div id="learn-more" class="content">
-						<p>They often don’t consider the <b>performance implications</b> of adding third party services to their sites. How much “weight” does any one script add to the page? How much longer will users be waiting for the site to load? How does this impact low-bandwidth and mobile audience?</p>
+				<div class="inner content">
+					<div id="learn-more" >
+						<p>We are a <a href="<?php echo esc_url( home_url( '/' ) ); ?>team">team of technologists</a> who believe in journalism that furthers democracy, challenges corruption, and dismantles structural oppression.</p>
+						<p>We exist to elevate that work – and we contribute by <a href="<?php echo esc_url( home_url( '/' ) ); ?>projects">building tools</a> that promote engagement, build trust, optimize distribution, and tell stories in new and compelling ways. </p>
+						<p>If you're tackling a problem facing the news industry, <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact">we want to work with you</a>.</p>
 					</div>
-					<div class="content three-up">
+				</div>
+			</section>
+
+			<section id="promos" class="section flex-grid">
+				<div class="promo-largo">
+					<div class="overlay"></div>
+					<h3 class="abs-center">Establish Roots</h3>
+				</div>
+				<div class="promo-revenue">
+					<div class="overlay"></div>
+					<h3 class="abs-center">Build Revenue</h3>
+				</div>
+				<div class="promo-custom">
+					<div class="overlay"></div>
+					<h3 class="abs-center">Innovate</h3>
+				</div>
+			</section>
+
+			<section  id="featured-blogs" class="section">
+				<div class="inner content">
+					<div class="flex-grid">
 						<div>
-							<img src="http://placehold.it/350x150" width="100%"/>
-							<h3>Largo Collective</h3>
-							<p>Largo is a premium WordPress framework for news websites. Built and maintained by the INN Labs, Largo powers news operations around the world. </p>
+							<img src="http://placehold.it/300x200" width="100%"/>
 						</div>
 						<div>
-							<img src="http://placehold.it/350x150" width="100%"/>
-							<h3>WordPress Plugins</h3>
-							<p>They often don’t consider the <b>performance implications</b> of adding third party services to their sites. How much “weight” does any one script add to the page? How much longer will users be waiting for the site to load? How does this impact low-bandwidth and mobile audience?</p>
-						</div>
-						<div>
-							<img src="http://placehold.it/350x150" width="100%"/>
-							<h3>Custom Design &amp; Development</h3>
-							<p>They often don’t consider the <b>performance implications</b> of adding third party services to their sites. How much “weight” does any one script add to the page? How much longer will users be waiting for the site to load? How does this impact low-bandwidth and mobile audience?</p>
+							<h4>FROM THE TEAM </h4>
+							<h3>Reimagining Largo</h3>
+							<p>Over the past few months, we've been soliciting feedback about Largo from members and the broader journalism-tech community – how they use it, what they like about, and, most importantly, what we can do to make it better. </p>
+							<date>April 2, 2017</date>
 						</div>
 					</div>
 				</div>
@@ -91,7 +108,7 @@ get_header(); ?>
 	        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	        if (target.length) {
 	          $('html, body').animate({
-	            scrollTop: target.offset().top
+	            scrollTop: target.offset().top - 67
 	          }, 500);
 	          return false;
 	        }
