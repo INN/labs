@@ -69,17 +69,6 @@ section {
 		}
 	}
 
-	.highlight-line {
-		display:inline;
-		background-color:$white;
-		color:$black;
-		padding:10px;
-		font-family:$font__headings;
-		font-weight: bold;
-		line-height:1.8;
-		font-size:2.5em;
-	}
-
 	.site-header .main-navigation {
 		display:none;
 	}
@@ -102,6 +91,17 @@ section {
 	}
 }
 
+.highlight-line {
+	display:inline;
+	background-color:$white;
+	color:$black;
+	padding:10px;
+	font-family:$font__headings;
+	font-weight: bold;
+	line-height:1.8;
+	font-size:2.5em;
+}
+
 .button {
 	width:100%;
 	display:inline-block;
@@ -117,11 +117,30 @@ section {
 		background-color: $primary;
 		cursor:pointer;
 	}
+
+	&.secondary {
+		border:2px solid $black;
+		background-color:transparentize($white,.7);
+		color:$black;
+		text-shadow:none;
+
+		&:hover {
+			background-color:$white;
+		}
+	}
 }
 a.button,
 a.button:hover {
 	color:$white;
 	text-decoration: none;
+}
+a.button.secondary {
+	color:$black;
+
+	&:hover {
+		color:$black;
+		text-decoration: none;
+	}
 }
 
 .content {
@@ -228,6 +247,24 @@ a.button:hover {
     		color:$primary;
     	}
     }
+}
+
+.page-template-page-capabilities,
+.page-template-page-projects,
+.page-template-page-showcase {
+	.entry-content p {
+		font-size: 1.5em;
+		margin: 0;
+		color:$black;
+	}
+	.flex-grid {
+		margin-bottom:2em;
+	}
+
+	h4 {
+		text-transform: uppercase;
+		border-bottom:2px dotted $primary;
+	}
 }
 
 @media screen and (max-width: 768px) {

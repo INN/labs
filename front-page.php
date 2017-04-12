@@ -73,10 +73,12 @@ get_header(); ?>
 							<img src="http://placehold.it/300x200" width="100%"/>
 						</div>
 						<div>
+							<!-- Should display the most recent featured post -->
 							<h4>FROM THE TEAM </h4>
 							<h3>Reimagining Largo</h3>
 							<p>Over the past few months, we've been soliciting feedback about Largo from members and the broader journalism-tech community – how they use it, what they like about, and, most importantly, what we can do to make it better. </p>
 							<date>April 2, 2017</date>
+
 						</div>
 					</div>
 				</div>
@@ -108,7 +110,7 @@ get_header(); ?>
 	        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	        if (target.length) {
 	          $('html, body').animate({
-	            scrollTop: target.offset().top - 67
+	            scrollTop: target.offset().top - 130
 	          }, 500);
 	          return false;
 	        }
