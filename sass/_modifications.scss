@@ -107,15 +107,17 @@ section {
 	display:inline-block;
 	padding:.75em;
 	background-color:$black;
+	border:2px solid $black;
 	text-transform: uppercase;
 	font-family:$font__buttons;
 	font-weight: bold;
     letter-spacing: .05em;
-    text-shadow:0px 0px 2px transparentize($black,.7);
+    //text-shadow:0px 0px 2px transparentize($black,.7);
 
     &:hover {
 		background-color: $primary;
 		cursor:pointer;
+		border:2px solid $black;
 	}
 
 	&.secondary {
@@ -129,10 +131,12 @@ section {
 		}
 	}
 }
-a.button,
-a.button:hover {
+a.button {
 	color:$white;
-	text-decoration: none;
+	&:hover {
+		color:$black;
+		text-decoration: none;
+	}
 }
 a.button.secondary {
 	color:$black;

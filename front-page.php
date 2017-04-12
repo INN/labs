@@ -58,7 +58,7 @@ get_header(); ?>
 				</div>
 				<div class="promo-revenue">
 					<div class="overlay"></div>
-					<h3 class="abs-center">Build Revenue</h3>
+					<h3 class="abs-center">Grow Revenue</h3>
 				</div>
 				<div class="promo-custom">
 					<div class="overlay"></div>
