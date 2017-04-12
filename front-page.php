@@ -72,8 +72,8 @@ get_header(); ?>
 	// show sticky nav
 	var win_height;
 	function showStickyNav($){
-		if($(this).scrollTop() >= win_height-90) {
-		    $('#site-navigation').slideDown('fast');
+		if($(this).scrollTop() >= win_height-88) {
+		    $('#site-navigation').show();
 		} else {
 			$('#site-navigation').slideUp('fast');
 		}
