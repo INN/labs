@@ -1,10 +1,23 @@
 // show sticky nav
 var win_height;
 function showStickyNav($){
-	if($(this).scrollTop() >= win_height-88) {
-	    $('#site-navigation').show();
+	var nav = $('#site-navigation');
+	if($(this).scrollTop() >= win_height-86) {
+	    nav.find('div').show();
+		nav.css({
+			'padding':'',
+			'max-height':'',
+			'overflow':''
+		});
+	    nav.show();
 	} else {
-		$('#site-navigation').slideUp('fast');
+		nav.find('div').hide();
+		nav.css({
+			'padding':0,
+			'max-height':30,
+			'overflow':'hidden'
+		});
+		nav.slideUp(200);
 	}
 	
 }
