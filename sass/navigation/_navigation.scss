@@ -15,14 +15,15 @@
 .site-header {
 	position:fixed;
 	width:100%;
-	top:0;
 	z-index:11;
-	border-top:18px solid #000;
+	border-top:36px solid #000;
 
 	.tab {
+		display: block;
 	    max-width: 220px;
-		margin-left:18px;
-		margin-top: -18px;
+		margin-left:36px;
+		margin-top: -36px;
+		padding:22px 8px 2px;
 		background-color:#000;
 		position:relative;
 		z-index:11;
@@ -30,6 +31,11 @@
 		&:hover {
 			background-color:$primary;
 		} 
+
+		a {
+			display: block;
+			line-height: 0;
+		}
 
 		img {
 			width:100%;

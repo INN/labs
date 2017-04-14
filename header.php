@@ -23,12 +23,15 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'largo' ); ?></a>
 
+	<nav id="global-navigation" class="global-navigation" role="navigation">
+		<?php wp_nav_menu( array( 'theme_location' => 'global', 'menu_id' => 'global-menu' ) ); ?>
+	</nav>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<!-- <?php if ( is_front_page() && is_home() ) : ?><?php else : ?> <?php endif; ?>-->
-				<div class="tab">
-			    	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/labs-logo-white.png" alt="<?php bloginfo( 'name' ); ?>" /></a>
-			    </div>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="tab">
+			    	<img src="<?php bloginfo('stylesheet_directory'); ?>/images/labs-logo-white.png" alt="<?php bloginfo( 'name' ); ?>" />
+			    </a>
 			    <nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'largo' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>

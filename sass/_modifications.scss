@@ -1,5 +1,58 @@
-#main {
+#page {
+
+	position:relative;
+}
+
+a {
+	transition: all 100ms;
+}
+
+#global-navigation {
+    position: fixed;
+    z-index: 12;
+    right: 0;
+    padding:.5em 1em 0;
+    height:36px;
+    font-size:.8em;
+
+    ul, li {
+    	list-style: none;
+    	padding:0;
+    	margin:0;
+    }
+
+    li {
+    	display:inline-block;
+    	margin:0 1em;
+    }
+
+    a {
+    	display: inline-block;
+    	color:$primary;
+    	padding:0 0 6px;
+
+    	&:hover {
+    		color:$white;
+    		border-bottom:2px dotted $white;
+    	}
+    }
+}
+
+#melodrama {
+	position:fixed;
+	width:100%;
 	background-color: #181a2d; //pulled from background images
+
+	&.boohiss {
+		transform:translateY(-100vh);
+	}
+}
+#hero-container {
+	height:100vh;
+}
+
+#villian-container {
+	height:100vh;
 }
 
 section {
@@ -11,7 +64,7 @@ section {
 		bottom:0;
 
 		&.intro {
-			position:fixed;
+			//position:fixed;
 			background-color: transparent;
 			//background-image: url(images/INN-Lab-Hero-02.svg);
 			background-size:cover;
@@ -123,15 +176,23 @@ section {
 		margin-top:-66px;
 	}
 
+	#contact-cta {
+		border-bottom:16px solid $black;
+	}
+
+	.site-footer {
+		margin-top:70vh;
+	}
+
 	&.logged-in {
 		#main .main-navigation {
 		    z-index: 10;
 		    position: relative;
-		    top: -98px;
+		    top: -99px;
 		}
 
 		#main .main-navigation + section{
-			margin-top:-98px;
+			margin-top:-99px;
 		}
 	}
 }
@@ -220,14 +281,19 @@ a.button.secondary {
 	position:fixed;
 }
 
-#promos {
-	div {
+.promos {
+
+	position:relative;
+	z-index:2;
+
+	.promo {
 		min-height:400px;
 		width:100%;
 		margin:0;
 		position:relative;
 		background-size:cover;
 		background-position:center center;
+		overflow:hidden;
 
 		.overlay {
 			position:absolute;
@@ -264,7 +330,147 @@ a.button.secondary {
 				background-color:transparentize($accent7,.2);
 			}
 		}
+
+		.detail {
+			//display:none;
+			background-color:$black;
+			padding:2em;
+			margin:0;
+			// Position inside column
+			position: absolute;
+			top: 0; right: 0; bottom: 0; left: 0;
+
+			/* 
+			Visibility delay gives the previously hovered element time to slide out before disappearing.
+			Remove the `visibility` transition to slide in current element without sliding out previous element
+			*/
+			$speed: 0.275s;
+			transition: all $speed ease-in-out, visibility 0s $speed;
+			visibility: hidden;
+			will-change: transform;
+			// Slides start below their columns, giving upward motion on hover
+			transform: translateY(100%);
+
+			h4, p {
+				opacity:0;
+				color:$white;
+				//transition:all 1000ms;
+
+			}
+		}
+
+		&:hover {
+			.detail {
+				h4, p {
+					opacity:1;
+				}
+			}
+		}
 	}
+
+
+
+	&:hover {
+		// Next row, slides are above their columns, giving downward motion on hover
+		& ~ .promos .detail { transform: translateY(-100%); }
+
+		// Current row, slides to the right of their columns, giving left motion on hover
+		.detail { transform: translateX(100%); }
+
+		// Current row, next slides, slides to the left of their columns, giving right motion on hover
+		& .promo:hover ~ .promo .detail { transform: translateX(-100%); }
+
+		// Current slide
+		.promo:hover .detail {
+			transform: none;
+			visibility: visible;
+			transition-delay: 0s;
+		}
+	}
+}
+
+#process {
+	min-width:100%;
+	min-height:70vh;
+	padding:6em 0;
+	position:relative;
+	z-index:0;
+	background-color:$neutral2;
+	overflow:hidden;
+
+	.filtered-bg {
+		position:absolute;
+		top:-4px;
+		right:-4px;
+		bottom:-4px;
+		left:-4px;		
+		background-image:url(/wp-content/themes/labs/images/stickies-sm.jpg);
+		background-size:cover;
+		background-position:center center;
+		-webkit-filter: blur(3px);
+		-moz-filter: blur(3px);
+		-o-filter: blur(3px);
+		-ms-filter: blur(3px);
+		filter: blur(3px);
+	}
+
+	>div {
+		background-color:transparent;
+		-webkit-filter: blur(0);
+		-moz-filter: blur(0);
+		-o-filter: blur(0);
+		-ms-filter: blur(0);
+		filter: blur(0);
+		
+		>div {
+			// background-color:$black;
+
+			// h2 {
+			// 	color:$white;
+			// 	text-transform: uppercase;
+			// }
+
+			p {
+				font-size:130%;
+			}
+		}
+	}
+}
+
+#sign-up {
+	background-color: $black;
+	color:$white;
+
+	label {
+		display:none; //need to fix
+	}
+
+	p {
+		margin:0 0 .5em;
+		color:$neutral3;
+
+		strong {
+			color:$white;
+			padding-right:.5em;
+		}
+	}
+
+	>div {
+		padding:2em 3em;
+	}
+}
+
+input[type="button"], input[type="reset"], input[type="submit"] {
+    //-webkit-appearance: button;
+    cursor: pointer;
+    font-size: 1em;
+    border: none;
+    line-height: 1.95;
+    padding: 0 1em;
+    background-color: $primary;
+    color:$white;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 #featured-blogs {
@@ -324,8 +530,33 @@ a.button.secondary {
 	}
 }
 
+@media screen and (max-width: 960px) {
+
+}
+
 @media screen and (max-width: 768px) {
-	.intro {
+	.site-header .tab {
+	    margin: 0;
+	    max-width: 100%;
+	    padding-top: 0;
+
+	    img {
+		    max-width: 170px;
+		}
+	}
+
+	.highlight-line {
+		font-size:1.6em;
+		line-height:2.2;
+	}
+	.home #front ul {
+		margin:1em 0;
+	}
+	.home #front li {
+	    width: 43%;
+	}
+	#intro {
+
 		.abs-center {
 			padding:8%;
 		}
@@ -337,5 +568,50 @@ a.button.secondary {
 	    	width:100%;
 	    	margin-bottom:.5em;
 	    }
+	}
+	.content {
+		padding:1.5em;
+	}
+	.promos {
+		flex-wrap:wrap;
+	}
+	.promo {
+		min-width:100%;
+
+		.detail {
+			transition: all 0s ease-in-out, visibility 0s 0s;
+			display:none;
+		}
+
+		&:hover {
+			.detail {
+				display:block;
+			}
+		}
+	}
+	#featured-blogs .flex-grid {
+	    flex-wrap: wrap;
+	}
+
+	.page-template-page-capabilities,
+	.page-template-page-projects,
+	.page-template-page-showcase {
+		.entry-content p {
+			font-size: 1.25em;
+		}
+	}
+}
+@media screen and (max-width: 500px) {
+
+	.highlight-line {
+		font-size:1.6em;
+		line-height:2.2;
+	}
+	.home #front ul {
+		margin:1em 0;
+	}
+	.home #front li {
+	    width: 70%;
+	    margin-top:.5em;
 	}
 }

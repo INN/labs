@@ -16,14 +16,27 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<section id="intro-container" class="section intro">
-			</section>
+
+			<div id="melodrama">
+				<section id="hero-container" class="section intro">
+				</section>
+				<section id="villian-container" class="section intro">
+				</section>
+			</div>
 			<script>
-				var num = Math.round(Math.random()*1) + 1; //if there are more illustrations, increase the multiplier
-				var url = '/wp-content/themes/labs/images/INN-Labs-Hero-0' + num + '.svg';
-				var hero = document.getElementById('intro-container');
-				hero.setAttribute( 'style','background-image:url(' + url + ')' );
+				var image_ids = [1,2]; //if there are more illustrations, add to the array
+				var id = image_ids[Math.floor(Math.random() * image_ids.length)];
+				var index = image_ids.indexOf(id);
+				if (index > -1) {
+				    image_ids.splice(index, 1);
+				}
+				var url_1 = '/wp-content/themes/labs/images/INN-Labs-Hero-0' + id + '.svg';
+				var url_2 = '/wp-content/themes/labs/images/INN-Labs-Hero-0' + image_ids[Math.floor(Math.random()*image_ids.length)] + '.svg'; //used later
+				var hero = document.getElementById('hero-container');
+				hero.setAttribute( 'style','background-image:url(' + url_1 + ')' );
+				document.getElementById('villian-container').setAttribute( 'style','background-image:url(' + url_2 + ')' );
 			</script>
+
 			<section id="front" class="section transparent">
 				<div class="inner">
 					<div class="abs-center">
@@ -57,18 +70,61 @@ get_header(); ?>
 				</div>
 			</section>
 
-			<section id="promos" class="section flex-grid">
-				<div class="promo-largo">
-					<div class="overlay"></div>
-					<h3 class="abs-center">Establish Roots</h3>
+			<section id="promos" class="promos section flex-grid">
+				<div class="promo promo-largo">
+					<a href="/projects">
+						<div class="overlay"></div>
+						<h3 class="abs-center">Establish Roots</h3>
+						<div class="detail">
+							<h4>Reimagining Largo</h4>
+							<p>Over the past few months, we've been soliciting feedback about Largo from members and the broader journalism-tech community – how they use it, what they like about, and, most importantly, what we can do to make it better. </p>
+						</div>
+					</a>
 				</div>
-				<div class="promo-revenue">
-					<div class="overlay"></div>
-					<h3 class="abs-center">Grow Revenue</h3>
+				<div class="promo promo-revenue">
+					<a href="/capabilities">
+						<div class="overlay"></div>
+						<h3 class="abs-center">Grow Revenue</h3>
+						<div class="detail">
+							<h4>Reimagining Largo</h4>
+							<p>Over the past few months, we've been soliciting feedback about Largo from members and the broader journalism-tech community – how they use it, what they like about, and, most importantly, what we can do to make it better. </p>
+						</div>
+					</a>
 				</div>
-				<div class="promo-custom">
-					<div class="overlay"></div>
-					<h3 class="abs-center">Innovate</h3>
+				<div class="promo promo-custom">
+					<a href="/capabilities">
+						<div class="overlay"></div>
+						<h3 class="abs-center">Innovate</h3>
+						<div class="detail">
+							<h4>Reimagining Largo</h4>
+							<p>Over the past few months, we've been soliciting feedback about Largo from members and the broader journalism-tech community – how they use it, what they like about, and, most importantly, what we can do to make it better. </p>
+						</div>
+					</a>
+				</div>
+			</section>
+
+			<section id="process" class="section">
+				<div class="filtered-bg"></div>
+				<div class="inner content">
+					<div class="content">
+						<h2>Our Process</h2>
+						<p>Over the past few months, we've been soliciting feedback about Largo from members and the broader journalism-tech community – how they use it, what they like about, and, most importantly, what we can do to make it better. </p>
+					</div>
+				</div>
+			</section>
+
+			<section id="sign-up" class="section">
+				<div class="inner">
+					<p><strong>Nerd Alert!</strong> Sign up for the INN Labs newsletter. </p>
+					<form>
+					<label>Email Address: </label>
+					<input type="email" placeholder="Email Address"/>
+					<label>First Name: </label>
+					<input type="text" placeholder="First Name"/>
+					<label>Last Name: </label>
+					<input type="text" placeholder="Last Name"/>
+					<input type="button" value="Sign Up"/>
+					</form>
 				</div>
 			</section>
 
@@ -92,7 +148,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 
 <?php
 //get_sidebar();
