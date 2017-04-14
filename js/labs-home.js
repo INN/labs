@@ -17,14 +17,22 @@ function showStickyNav($){
 			'max-height':30,
 			'overflow':'hidden'
 		});
-		nav.slideUp(200);
+		nav.slideUp(100);
 	}
 	
+}
+
+function getRandomHero($){
+	var num = Math.round(Math.random()*1) + 1; //if there are more illustrations, increase the multiplier
+	var url = '/wp-content/themes/labs/images/INN-Lab-Hero-0' + num + '.svg';
+	$('section.intro').css('background-image','url(' + url + ')');
 }
 
 jQuery(document).ready(function(){
 	var $ = jQuery;
 	win_height = jQuery(window).height();
+
+	getRandomHero($);
 
 	// smooth scroll to anchor
 	$('a[href*="#"]:not([href="#"])').click(function() {
