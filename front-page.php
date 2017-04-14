@@ -16,8 +16,13 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<section class="section intro">
+			<section id="intro-container" class="section intro">
 			</section>
+			<script>
+				var num = Math.round(Math.random()*1) + 1; //if there are more illustrations, increase the multiplier
+				var url = '/wp-content/themes/labs/images/INN-Labs-Hero-0' + num + '.svg';
+				document.getElementById('intro-container').setAttribute( 'style','background-image:url(' + url + ')' );
+			</script>
 			<section id="front" class="section transparent">
 				<div class="inner">
 					<div class="abs-center">

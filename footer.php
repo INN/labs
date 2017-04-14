@@ -14,7 +14,7 @@
 			<div class="inner">
 				<div>
 					<h1 class="highlight-line site-description">Let's talk ideas.</h1>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact" class="button"><span>What's your project?</span></a>
+					<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>contact" class="button"><span>What's your project?</span></a></p>
 				</div>
 			</div>
 		</section>

@@ -8,8 +8,8 @@ section {
 
 		&.intro {
 			position:fixed;
-			background-color: $black;
-			background-image: url(images/INN-Lab-Hero-02.svg);
+			background-color: #181a2d; //pulled from background images
+			//background-image: url(images/INN-Lab-Hero-02.svg);
 			background-size:cover;
 			background-position:center center;
 			// -webkit-filter: blur(5px);
@@ -67,6 +67,10 @@ section {
 			display:inline-block;
 			text-align:center;
 		}
+
+		.button {
+			box-shadow:0 0 20px rgba(0,0,0,.3);
+		}
 	}
 
 	.site-header .main-navigation {
@@ -86,7 +90,7 @@ section {
 	    top: -66px;
 	}
 
-	section.section:nth-child(4){
+	#main .main-navigation + section{
 		margin-top:-66px;
 	}
 
@@ -97,7 +101,7 @@ section {
 		    top: -98px;
 		}
 
-		section.section:nth-child(4){
+		#main .main-navigation + section{
 			margin-top:-98px;
 		}
 	}
@@ -113,12 +117,13 @@ section {
 	font-family:$font__headings;
 	font-weight: bold;
 	line-height:1.8;
-	font-size:2.5em;
+	font-size:2.6em;
 	-webkit-box-decoration-break: clone;
     -moz-box-decoration-break: clone;
     -o-box-decoration-break: clone;
     -ms-box-decoration-break: clone;
     box-decoration-break: clone;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
 }
 
 .button {
@@ -141,7 +146,7 @@ section {
 
 	&.secondary {
 		border:2px solid $black;
-		background-color:transparentize($white,.7);
+		background-color:transparentize($white,.6);
 		color:$black;
 		text-shadow:none;
 
