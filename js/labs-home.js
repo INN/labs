@@ -1,9 +1,7 @@
 // scroll-based actions
 var win_height;
 var count = 0;
-var melodrama = $('#melodrama');
-var img = $(hero).css('background-image').split('/');
-img = '/wp-content/themes/labs/images/' + img[img.length-1].split('"')[0];
+var melodrama = $('#hero-container');
 
 function setStickyNav(scrollY){
 	var $ = jQuery;
@@ -15,44 +13,26 @@ function setStickyNav(scrollY){
 	if (logged_in) {
 		height_check = win_height-134;
 	} else {
-		height_check = win_height-110;
+		height_check = win_height-108;
 	}
 	if(scrollY >= height_check) {
-	    nav.find('div').show();
-		nav.css({
-			'padding':'',
-			'max-height':'',
-			'overflow':''
-		});
 	    nav.show();
 	} else {
-		nav.find('div').hide();
-		nav.css({
-			'padding':0,
-			'max-height':30,
-			'overflow':'hidden'
-		});
-		nav.slideUp(100);
+		nav.hide();
 	}
 	
 }
 
 function backgroundCheck(scrollY){
 	// background illustration
-	if(scrollY >= win_height*1.5) {
-		if (count == 0){
-			melodrama.addClass('boohiss');
-			count++;
-			img = url_2;
-		} else if (img !== url_2) {
-			melodrama.addClass('boohiss');
-			img = url_2;
-		} 		
+	if(scrollY >= win_height*1.1) {
+		if (!melodrama.hasClass('boohiss')){
+			melodrama.addClass('boohiss');	
+		}
 	} else {
-		if (img !== url_1) {
+		if (melodrama.hasClass('boohiss')){
 			melodrama.removeClass('boohiss');
-			img = url_1;
-		} 
+		}
 	}
 }
 
@@ -74,7 +54,6 @@ jQuery(document).ready(function(){
       }
     });
 
-    setStickyNav($);
 });	
 
 jQuery(window).resize(function(){  

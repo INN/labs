@@ -21,6 +21,11 @@
 
 	</div><!-- #content -->
 
+	<?php if ( is_front_page() && is_home() ) : ?>
+		<section id="villian-container" class="section intro">
+		</section>
+	<?php endif;?>
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<!-- <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'largo' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'largo' ), 'WordPress' ); ?></a>
@@ -35,3 +40,4 @@
 
 </body>
 </html>
+	
