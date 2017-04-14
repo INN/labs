@@ -21,7 +21,8 @@ get_header(); ?>
 			<script>
 				var num = Math.round(Math.random()*1) + 1; //if there are more illustrations, increase the multiplier
 				var url = '/wp-content/themes/labs/images/INN-Labs-Hero-0' + num + '.svg';
-				document.getElementById('intro-container').setAttribute( 'style','background-image:url(' + url + ')' );
+				var hero = document.getElementById('intro-container');
+				hero.setAttribute( 'style','background-image:url(' + url + ')' );
 			</script>
 			<section id="front" class="section transparent">
 				<div class="inner">
