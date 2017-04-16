@@ -18,7 +18,7 @@ function setStickyNav(scrollY){
 	if(scrollY >= height_check) {
 	    nav.show();
 	} else {
-		nav.hide();
+		nav.hide();   
 	}
 	
 }
@@ -38,7 +38,7 @@ function backgroundCheck(scrollY){
 
 jQuery(document).ready(function(){
 	var $ = jQuery;
-	win_height = jQuery(window).height();
+	win_height = $(window).height();
 
 	// smooth scroll to anchor
 	$('a[href*="#"]:not([href="#"])').click(function() {
@@ -53,6 +53,8 @@ jQuery(document).ready(function(){
         }
       }
     });
+
+    setStickyNav(window.scrollY);
 
 });	
 
@@ -83,7 +85,7 @@ function update() {
 
 	var currentScrollY = latestKnownScrollY;
 
-	backgroundCheck(currentScrollY);
+	//backgroundCheck(currentScrollY);
 	setStickyNav(currentScrollY);
 }
 

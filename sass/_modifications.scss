@@ -56,8 +56,10 @@ a {
 }
 
 #villian-container {
-	height:70vh;
-
+	height:60vh;
+	background-color: #181a2d;
+	background-size:cover;
+	background-position:center center;
 }
 
 section {
@@ -402,6 +404,7 @@ a.button.secondary {
 	z-index:0;
 	background-color:$neutral2;
 	overflow:hidden;
+	-webkit-transform:translatez(0);
 
 	.filtered-bg {
 		position:absolute;
@@ -507,6 +510,7 @@ input[type="button"], input[type="reset"], input[type="submit"] {
 	text-align:center;
 	position: relative;
     padding: 60px;
+    width:100%;
 
     a, a:visited {
     	color:$white;

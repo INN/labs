@@ -22,7 +22,7 @@
 	</div><!-- #content -->
 
 	<?php if ( is_front_page() && is_home() ) : ?>
-		<section id="villian-container" class="section intro">
+		<section id="villian-container" class="section">
 		</section>
 	<?php endif;?>
 
