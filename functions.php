@@ -7,7 +7,7 @@
  * @package Largo
  */
 
-if ( ! function_exists( 'largo_setup' ) ) :
+if ( ! function_exists( 'innlabs_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
