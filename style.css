@@ -3,6 +3,7 @@ Theme Name: Largo
 Theme URI: http://underscores.me/
 Author: inn_nerds
 Author URI: https://nerds.inn.org
+Template: largo
 Description: A responsive news theme developed by the Institute for Nonprofit News (INN). Crafted specifically with the needs of news publishers in mind.
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -1270,7 +1271,7 @@ a.button.secondary:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  /* 
+  /*
 			Visibility delay gives the previously hovered element time to slide out before disappearing.
 			Remove the `visibility` transition to slide in current element without sliding out previous element
 			*/
