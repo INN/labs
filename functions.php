@@ -37,9 +37,9 @@ function innlabs_scripts() {
 	wp_enqueue_script('jquery');
 
 	if ( is_front_page() && is_home() ) {
-		wp_enqueue_script( 'labs-home', get_template_directory_uri() . '/js/labs-home.js', array(), '20151215', true );
+		wp_enqueue_script( 'labs-home', get_stylesheet_directory_uri() . '/js/labs-home.js', array(), '20151215', true );
 	}
 
-	wp_enqueue_script( 'innlabs-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20151215', true );
+	wp_enqueue_script( 'innlabs-navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20151215', true );
 }
 add_action( 'wp_enqueue_scripts', 'innlabs_scripts' );
