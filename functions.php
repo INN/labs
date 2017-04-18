@@ -29,7 +29,7 @@ add_action( 'after_setup_theme', 'innlabs_setup' );
 /**
  * Enqueue scripts and styles.
  */
-function largo_scripts() {
+function innlabs_scripts() {
 	wp_enqueue_style( 'innlabs-style', get_stylesheet_uri() );
 
 	wp_deregister_script('jquery');
@@ -40,6 +40,6 @@ function largo_scripts() {
 		wp_enqueue_script( 'labs-home', get_template_directory_uri() . '/js/labs-home.js', array(), '20151215', true );
 	}
 
-	wp_enqueue_script( 'largo-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20151215', true );
+	wp_enqueue_script( 'innlabs-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20151215', true );
 }
-add_action( 'wp_enqueue_scripts', 'largo_scripts' );
+add_action( 'wp_enqueue_scripts', 'innlabs_scripts' );
