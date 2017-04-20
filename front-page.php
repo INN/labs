@@ -24,7 +24,7 @@ get_header(); ?>
 	    image_ids.splice(index, 1);
 	}
 	var url_1 = '/wp-content/themes/labs/images/INN-Labs-Hero-0' + id + '.svg';
-	var url_2 = '/wp-content/themes/labs/images/INN-Labs-Hero-0' + image_ids[Math.floor(Math.random()*image_ids.length)] + '.svg'; 
+	var url_2 = '/wp-content/themes/labs/images/INN-Labs-Hero-0' + image_ids[Math.floor(Math.random()*image_ids.length)] + '.svg';
 	document.write('<style>#hero-container{background-image:url(' + url_1 + ');} #villian-container{background-image:url(' + url_2 + ');}</style>');
 </script>
 
@@ -33,7 +33,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section id="front" class="section transparent">
-			
+
 				<div class="inner">
 					<div class="abs-center">
 						<!--INN Labs works with newsroom technologists to build the future of nonprofit news.-->
@@ -49,10 +49,10 @@ get_header(); ?>
 						</ul>
 					</div>
 				</div>
-			</section>			  
+			</section>
 
 			<nav class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'largo' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'largo' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav> <!-- #site-navigation -->
 
@@ -148,5 +148,3 @@ get_header(); ?>
 <?php
 //get_sidebar();
 get_footer();
-
-

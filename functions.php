@@ -32,6 +32,9 @@ add_action( 'after_setup_theme', 'innlabs_setup' );
 function innlabs_scripts() {
 	wp_enqueue_style( 'innlabs-style', get_stylesheet_uri() );
 
+	// Responsive nav
+	wp_enqueue_script( 'wpb_togglemenu', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20160909', true );
+
 	wp_deregister_script('jquery');
 	wp_register_script('jquery', "https" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://code.jquery.com/jquery-3.2.1.min.js", false, null);
 	wp_enqueue_script('jquery');
@@ -42,4 +45,5 @@ function innlabs_scripts() {
 
 	wp_enqueue_script( 'innlabs-navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20151215', true );
 }
+
 add_action( 'wp_enqueue_scripts', 'innlabs_scripts' );
