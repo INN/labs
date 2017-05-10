@@ -6,7 +6,8 @@ body {
 	background-color: #181a2d; //pulled from background images
 }
 #page {
-
+	max-width:100%!important;
+	width:100%!important;
 	position:relative;
 }
 
@@ -569,11 +570,7 @@ input[type="submit"] {
 
 .page-template-page-projects {
 	.flex-grid {
-		flex-wrap:wrap;
-
-		>div {
-			width:20%;
-		}
+		
 	}
 }
 
