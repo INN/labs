@@ -70,30 +70,33 @@ get_header(); ?>
 				<div class="promo promo-largo">
 					<a href="/projects">
 						<div class="overlay"></div>
-						<h3 class="abs-center">Establish Roots</h3>
+						<h2 class="abs-center">Build</h2>
 						<div class="detail">
-							<h4>Reimagining Largo</h4>
-							<p>Over the past few months, we've been soliciting feedback about Largo from members and the broader journalism-tech community – how they use it, what they like about, and, most importantly, what we can do to make it better. </p>
+							<h3>Largo</h3>
+							<p>Get your publication off the ground with Largo, our premium WordPress theme for new organizations. Whether you publish frequently or sparingly, with in-depth reports or new briefs, you can customize Largo to fit your publication's individual needs. <!-- Take your site to the next level with Largo+, a set of publishing plugins that improve content creation, ease distribution, and enhance visual presentation. --></p>
+							<div class="button">Learn More</div>
 						</div>
 					</a>
 				</div>
 				<div class="promo promo-revenue">
 					<a href="/capabilities">
 						<div class="overlay"></div>
-						<h3 class="abs-center">Grow Revenue</h3>
+						<h2 class="abs-center">Grow</h2>
 						<div class="detail">
-							<h4>Reimagining Largo</h4>
-							<p>Over the past few months, we've been soliciting feedback about Largo from members and the broader journalism-tech community – how they use it, what they like about, and, most importantly, what we can do to make it better. </p>
+							<h3>Analytics &amp; Advertising</h3>
+							<p>Need to engage your audience? Build revenue? Improve SEO? We're​ happy to dive into your analytics and recommend proven solutions to connect you with your community.</p>
+							<div class="button">Learn More</div>
 						</div>
 					</a>
 				</div>
 				<div class="promo promo-custom">
 					<a href="/capabilities">
 						<div class="overlay"></div>
-						<h3 class="abs-center">Innovate</h3>
+						<h2 class="abs-center">Evolve</h2>
 						<div class="detail">
-							<h4>Reimagining Largo</h4>
-							<p>Over the past few months, we've been soliciting feedback about Largo from members and the broader journalism-tech community – how they use it, what they like about, and, most importantly, what we can do to make it better. </p>
+							<h3>Partnership</h3>
+							<p>Let's make news better. With years of experience in newsroom tech, our team of technologists can help build your next news app, redesign your website, and collaborate with you to build something completely new.</p>
+							<div class="button">Learn More</div>
 						</div>
 					</a>
 				</div>
@@ -104,7 +107,8 @@ get_header(); ?>
 				<div class="inner content">
 					<div class="content">
 						<h2>Our Process</h2>
-						<p>Over the past few months, we've been soliciting feedback about Largo from members and the broader journalism-tech community – how they use it, what they like about, and, most importantly, what we can do to make it better. </p>
+						<p>We approach each new project as a partnership. Come to us with an idea or a problem to solve, and we will work with you every step of the way to develop innovative and cost-effective solutions that align with your vision.</p>
+						<p>Our team values user-centered design, open-source development, and a lean approach to product development. We typically follow <a href="<?php echo esc_url( home_url( '/' ) ); ?>process/">the process outlined here</a> when we begin a new project.</p>
 					</div>
 				</div>
 			</section>
@@ -112,32 +116,59 @@ get_header(); ?>
 			<section id="sign-up" class="section">
 				<div class="inner">
 					<p><strong>Nerd Alert!</strong> Sign up for the INN Labs newsletter. </p>
-					<form>
-					<label>Email Address: </label>
-					<input type="email" placeholder="Email Address"/>
-					<label>First Name: </label>
-					<input type="text" placeholder="First Name"/>
-					<label>Last Name: </label>
-					<input type="text" placeholder="Last Name"/>
-					<input type="button" value="Sign Up"/>
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+					<form action="//inn.us1.list-manage.com/subscribe/post?u=81670c9d1b5fbeba1c29f2865&amp;id=1476113985" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					    <div id="mc_embed_signup_scroll">
+					    	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+							<input type="email" placeholder="Email Address" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+						
+							<label for="mce-FNAME">First Name </label>
+							<input type="text" placeholder="First Name" value="" name="FNAME" class="" id="mce-FNAME">
+						
+
+							<label for="mce-LNAME">Last Name </label>
+							<input type="text" placeholder="Last Name" value="" name="LNAME" class="" id="mce-LNAME">
+						
+							<div class="mc-field-group input-group" style="display:none;">
+							    <strong>Project Updates </strong>
+							    <ul><li><input type="checkbox" value="1" name="group[4097][1]" id="mce-group[4097]-4097-0"><label for="mce-group[4097]-4097-0">Largo</label></li>
+							<li><input type="checkbox" value="2" name="group[4097][2]" id="mce-group[4097]-4097-1"><label for="mce-group[4097]-4097-1">One Liner</label></li>
+							</ul>
+							</div>
+							<input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_81670c9d1b5fbeba1c29f2865_1476113985" tabindex="-1" value=""></div>
+					    </div>
 					</form>
+					</div>
+					<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='radio';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
 				</div>
 			</section>
 
 			<section  id="featured-blogs" class="section">
 				<div class="inner content">
 					<div class="flex-grid">
-						<div>
-							<img src="http://placehold.it/300x200" width="100%"/>
-						</div>
-						<div>
-							<!-- Should display the most recent featured post -->
-							<h4>FROM THE TEAM </h4>
-							<h3>Reimagining Largo</h3>
-							<p>Over the past few months, we've been soliciting feedback about Largo from members and the broader journalism-tech community – how they use it, what they like about, and, most importantly, what we can do to make it better. </p>
-							<date>April 2, 2017</date>
-
-						</div>
+						<?php
+						$args = array( 'numberposts' => 1 );
+						$lastposts = get_posts( $args );
+						foreach($lastposts as $post) : setup_postdata($post); ?>
+							<div>
+								<!-- <img src="http://placehold.it/300x200" width="100%"/> -->
+								<?php echo the_post_thumbnail( 'large', array('class' => 'max-three') ); ?>
+							</div>
+							<div>
+								<!-- Should display the most recent ****featured*** post -->
+								<h4>FROM THE TEAM </h4>
+								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+								<?php the_excerpt(); ?>
+								<date><?php the_time( 'F j, Y' ); ?></date>
+							</div>
+						<?php endforeach; ?>
 					</div>
 				</div>
 			</section>

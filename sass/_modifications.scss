@@ -309,11 +309,16 @@ a.button.secondary {
 			width:100%;
 		}
 
-		h3 {
+		h2 {
 			text-align: center;
 			color:$white;
-			font-size:2em;
+			font-size:3em;
 			transform:translateY(-100%);
+		}
+
+		h3 {
+			color:$white;
+			font-size:1.25em;
 		}
 
 		&.promo-largo {
@@ -368,9 +373,19 @@ a.button.secondary {
 
 		&:hover {
 			.detail {
-				h4, p {
+				h3, p {
 					opacity:1;
 				}
+			}
+		}
+
+		.button {
+			display:inline;
+			background-color:$primary;
+			color:$black;
+			&:hover {
+				background-color:transparentize($primary, .05);
+				color:$white;
 			}
 		}
 	}
@@ -481,9 +496,22 @@ input[type="button"], input[type="reset"], input[type="submit"] {
     text-transform: uppercase;
 }
 
+input[type="submit"] {
+	max-width:200px;
+
+	&:hover {
+		border:none;
+		background-color:transparentize($primary, .05);
+	}
+}
+
 #featured-blogs {
 	h4 {
 		margin-top:0;
+	}
+
+	.wp-post-image {
+		width:100%;
 	}
 }
 
