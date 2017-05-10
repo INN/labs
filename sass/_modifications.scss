@@ -147,13 +147,13 @@ section {
 		    font-size: 1.75em;
 		    margin: 0;
 		}
-
+		
 		ul {
 			list-style-type: none;
 			padding:0;
 			margin:2.5em 12% 4.5em 12%;
 		}
-
+		
 		li {
 			width:28%;
 			margin: 0 1%;
@@ -347,7 +347,7 @@ a.button.secondary {
 			position: absolute;
 			top: 0; right: 0; bottom: 0; left: 0;
 
-			/*
+			/* 
 			Visibility delay gives the previously hovered element time to slide out before disappearing.
 			Remove the `visibility` transition to slide in current element without sliding out previous element
 			*/
@@ -411,7 +411,7 @@ a.button.secondary {
 		top:-4px;
 		right:-4px;
 		bottom:-4px;
-		left:-4px;
+		left:-4px;		
 		background-image:url(/wp-content/themes/labs/images/stickies-sm.jpg);
 		background-size:cover;
 		background-position:center center;
@@ -429,7 +429,7 @@ a.button.secondary {
 		-o-filter: blur(0);
 		-ms-filter: blur(0);
 		filter: blur(0);
-
+		
 		>div {
 			// background-color:$black;
 
@@ -546,7 +546,7 @@ input[type="button"], input[type="reset"], input[type="submit"] {
 @media screen and (max-width: 768px) {
 	.site-header .tab {
 	    margin: 0;
-	    max-width: 25%;
+	    max-width: 100%;
 	    padding-top: 0;
 
 	    img {

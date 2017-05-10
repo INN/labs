@@ -32,15 +32,14 @@
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="tab">
 			    	<img src="<?php bloginfo('stylesheet_directory'); ?>/images/labs-logo-white.png" alt="<?php bloginfo( 'name' ); ?>" />
 			    </a>
-
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'largo' ); ?></button>
+			    <nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'largo' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav> <!-- #site-navigation -->
-
+			
 		</div><!-- .site-branding -->
 
-
+		
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
