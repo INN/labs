@@ -567,6 +567,16 @@ input[type="submit"] {
 	}
 }
 
+.page-template-page-projects {
+	.flex-grid {
+		flex-wrap:wrap;
+
+		>div {
+			width:20%;
+		}
+	}
+}
+
 @media screen and (max-width: 960px) {
 
 }
