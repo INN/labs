@@ -43,3 +43,8 @@ function innlabs_scripts() {
 	wp_enqueue_script( 'innlabs-navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20151215', true );
 }
 add_action( 'wp_enqueue_scripts', 'innlabs_scripts' );
+
+function labs_addexcerpt() {
+add_meta_box('postexcerpt', __('Excerpt'), 'post_excerpt_meta_box', 'page', 'normal', 'core');
+}
+add_action( 'admin_menu', 'labs_addexcerpt' );
