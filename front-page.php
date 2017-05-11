@@ -72,7 +72,7 @@ get_header(); ?>
 						<div class="overlay"></div>
 						<h2 class="abs-center">Build</h2>
 						<div class="detail">
-							<h3>Largo</h3>
+							<h3>Largo: The News Theme</h3>
 							<p>Get your publication off the ground with Largo, our premium WordPress theme for new organizations. Whether you publish frequently or sparingly, with in-depth reports or new briefs, you can customize Largo to fit your publication's individual needs. <!-- Take your site to the next level with Largo+, a set of publishing plugins that improve content creation, ease distribution, and enhance visual presentation. --></p>
 							<div class="button">Learn More</div>
 						</div>
@@ -84,7 +84,7 @@ get_header(); ?>
 						<h2 class="abs-center">Grow</h2>
 						<div class="detail">
 							<h3>Analytics &amp; Advertising</h3>
-							<p>Need to engage your audience? Build revenue? Improve SEO? We're​ happy to dive into your analytics and recommend proven solutions to connect you with your community.</p>
+							<p>Need to engage your audience? Build revenue? Improve SEO? We can teach you how to understand your analytics and recommend proven solutions to connect you with your community.</p>
 							<div class="button">Learn More</div>
 						</div>
 					</a>
@@ -94,7 +94,7 @@ get_header(); ?>
 						<div class="overlay"></div>
 						<h2 class="abs-center">Evolve</h2>
 						<div class="detail">
-							<h3>Partnership</h3>
+							<h3>Partner With Us</h3>
 							<p>Let's make news better. With years of experience in newsroom tech, our team of technologists can help build your next news app, redesign your website, and collaborate with you to build something completely new.</p>
 							<div class="button">Learn More</div>
 						</div>
@@ -108,7 +108,7 @@ get_header(); ?>
 					<div class="content">
 						<h2>Our Process</h2>
 						<p>We approach each new project as a partnership. Come to us with an idea or a problem to solve, and we will work with you every step of the way to develop innovative and cost-effective solutions that align with your vision.</p>
-						<p>Our team values user-centered design, open-source development, and a lean approach to product development. We typically follow <a href="<?php echo esc_url( home_url( '/' ) ); ?>process/">the process outlined here</a> when we begin a new project.</p>
+						<p>Our team values user-centered design, open-source development, and a lean approach to product management. We typically follow <a href="<?php echo esc_url( home_url( '/' ) ); ?>process/">the process outlined here</a> as a general framework for our collaboration with you.</p>
 					</div>
 				</div>
 			</section>

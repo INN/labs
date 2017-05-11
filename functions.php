@@ -44,7 +44,3 @@ function innlabs_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'innlabs_scripts' );
 
-function labs_addexcerpt() {
-add_meta_box('postexcerpt', __('Excerpt'), 'post_excerpt_meta_box', 'page', 'normal', 'core');
-}
-add_action( 'admin_menu', 'labs_addexcerpt' );
