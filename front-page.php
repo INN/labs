@@ -59,12 +59,20 @@ get_header(); ?>
 			<section class="section">
 				<div class="inner content">
 					<div id="learn-more" >
-						<p>We are a <a href="<?php echo esc_url( home_url( '/' ) ); ?>team">team of technologists</a> who believe in journalism that furthers democracy, challenges corruption, and dismantles structural oppression.</p>
-						<p>We exist to elevate that work – and we contribute by <a href="<?php echo esc_url( home_url( '/' ) ); ?>projects">building tools</a> that promote engagement, build trust, optimize distribution, and tell stories in new and compelling ways. </p>
+						<!-- <h2>We create robust publishing solutions for nonprofit news organizations.</h2> -->
+						<p>We are a <a href="<?php echo esc_url( home_url( '/' ) ); ?>team">team of technologists</a> who believe in journalism that furthers democracy, holds the powerful accountable, and expands the reach of investigative news.</p>
+						<p>We exist to elevate that work – and we contribute by <a href="<?php echo esc_url( home_url( '/' ) ); ?>projects">building tools</a> and <a href="<?php echo esc_url( home_url( '/' ) ); ?>showcase">tailored news experiences</a> that promote engagement, build trust, optimize distribution, and tell stories in new and compelling ways. </p>
 						<p>If you're tackling a problem facing the news industry, <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact">we want to work with you</a>.</p>
+						<p>Here's <a href="<?php echo esc_url( home_url( '/' ) ); ?>capabilities">how we can help</a>.</p>
 					</div>
 				</div>
 			</section>
+
+<!-- 			<section id="how-we-help" class="section">
+				<div class="inner">
+					<p><strong>Nerd Alert!</strong> Sign up for the INN Labs newsletter. </p>					
+				</div>
+			</section> -->
 
 			<section id="promos" class="promos section flex-grid">
 				<div class="promo promo-largo">

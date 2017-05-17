@@ -171,6 +171,9 @@ section {
 		p {
 	    	font-size: 1.5em;
 	    	color:$black;
+	    	a {
+	    		font-weight: bold;
+	    	}
 	    }
 	}
 
@@ -346,7 +349,7 @@ a.button.secondary {
 
 		.detail {
 			//display:none;
-			background-color:$black;
+			background-color:$black;//transparent;
 			padding:2em;
 			margin:0;
 			// Position inside column
@@ -458,12 +461,17 @@ a.button.secondary {
 
 			p {
 				font-size:130%;
+				color:$black;
+				a {
+					font-weight:bold;
+				}
 			}
 		}
 	}
 }
 
-#sign-up {
+#sign-up,
+#how-we-help {
 	background-color: $black;
 	color:$white;
 
