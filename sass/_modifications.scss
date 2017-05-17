@@ -297,7 +297,7 @@ a.button.secondary {
 	.promo {
 		min-height:400px;
 		width:100%;
-		margin:0;
+		padding:0;
 		position:relative;
 		background-size:cover;
 		background-position:center center;
@@ -384,6 +384,8 @@ a.button.secondary {
 			display:inline;
 			background-color:$primary;
 			color:$black;
+			padding:.75em 1em;
+			font-size:.9em;
 			&:hover {
 				background-color:transparentize($primary, .05);
 				color:$white;
@@ -562,16 +564,41 @@ input[type="submit"] {
 		margin-bottom:2em;
 	}
 
-	h4 {
+	h2 {
 		text-transform: uppercase;
 		border-bottom:2px dotted $primary;
 	}
 }
 
 .page-template-page-projects {
-	.flex-grid {
-		
+	#largo {
+		img {
+			width:230px;
+			max-width:100%;
+			margin-top:1em;
+		}
+
+		.flex-grid {
+			div {
+				flex-basis:0;
+				&:first-of-type{
+					flex-grow:.93;
+				}
+				&:last-of-type{
+					flex-grow:2;
+				}
+			}
+		}
 	}
+
+	#plugins {
+		img {
+			float:left;
+			max-width:80px;
+			padding:.25em 1em .25em 0;
+		}
+	}
+
 }
 
 @media screen and (max-width: 960px) {

@@ -108,7 +108,7 @@ get_header(); ?>
 					<div class="content">
 						<h2>Our Process</h2>
 						<p>We approach each new project as a partnership. Come to us with an idea or a problem to solve, and we will work with you every step of the way to develop innovative and cost-effective solutions that align with your vision.</p>
-						<p>Our team values user-centered design, open-source development, and a lean approach to product management. We typically follow <a href="<?php echo esc_url( home_url( '/' ) ); ?>process/">the process outlined here</a> as a general framework for our collaboration with you.</p>
+						<p>Our team values user-centered design, open-source development, and a lean approach to product management. We typically follow <a href="<?php echo esc_url( home_url( '/' ) ); ?>process/">the process outlined here</a> as a general framework for collaborations.</p>
 					</div>
 				</div>
 			</section>
