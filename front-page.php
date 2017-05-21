@@ -60,10 +60,10 @@ get_header(); ?>
 				<div class="inner content">
 					<div id="learn-more" >
 						<!-- <h2>We create robust publishing solutions for nonprofit news organizations.</h2> -->
-						<p>We are a <a href="<?php echo esc_url( home_url( '/' ) ); ?>team">team of technologists</a> who believe in journalism that furthers democracy, holds the powerful accountable, and expands the reach of investigative news.</p>
-						<p>We exist to elevate that work – and we contribute by <a href="<?php echo esc_url( home_url( '/' ) ); ?>projects">building tools</a> and <a href="<?php echo esc_url( home_url( '/' ) ); ?>showcase">tailored news experiences</a> that promote engagement, build trust, optimize distribution, and tell stories in new and compelling ways. </p>
-						<p>If you're tackling a problem facing the news industry, <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact">we want to work with you</a>.</p>
-						<p>Here's <a href="<?php echo esc_url( home_url( '/' ) ); ?>capabilities">how we can help</a>.</p>
+						<p>We are a <a href="<?php echo esc_url( home_url( '/' ) ); ?>team">team of technologists</a> who believe in journalism that builds communities, holds the powerful accountable, and encourages civic engagement.</p>
+						<p>We exist to elevate that work – and we contribute by <a href="<?php echo esc_url( home_url( '/' ) ); ?>projects">developing tools</a> and <a href="<?php echo esc_url( home_url( '/' ) ); ?>showcase">tailored news experiences</a> that establish trust, optimize distribution, and tell stories in new and compelling ways. </p>
+						<p>If you're tackling a problem facing independent news, <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact">we want to work with you</a>.</p>
+						<p>Here's how <a href="<?php echo esc_url( home_url( '/' ) ); ?>capabilities">we can help</a>.</p>
 					</div>
 				</div>
 			</section>
@@ -81,7 +81,7 @@ get_header(); ?>
 						<h2 class="abs-center">Build</h2>
 						<div class="detail">
 							<h3>Largo: The News Theme</h3>
-							<p>Get your publication off the ground with Largo, our premium WordPress theme for new organizations. Whether you publish frequently or sparingly, with in-depth reports or new briefs, you can customize Largo to fit your publication's individual needs. <!-- Take your site to the next level with Largo+, a set of publishing plugins that improve content creation, ease distribution, and enhance visual presentation. --></p>
+							<p>Get your publication off the ground with Largo, our WordPress theme for new organizations. Whether you publish frequently or sparingly, with in-depth reports or new briefs, you can customize Largo to fit your publication's individual needs. <!-- Take your site to the next level with Largo+, a set of publishing plugins that improve content creation, ease distribution, and enhance visual presentation. --></p>
 							<div class="button">Learn More</div>
 						</div>
 					</a>

@@ -4,6 +4,13 @@ html {
 }
 body {
 	background-color: #181a2d; //pulled from background images
+	p,
+	li {
+		font-size:1.125em;
+	}
+	nav li {
+		font-size:1em;
+	}
 }
 #page {
 	max-width:100%!important;
@@ -274,7 +281,7 @@ a.button.secondary {
 
 .content {
 	margin: 0 auto;
-    padding: 3em;
+    padding: 4em 3em;
     background-color: $white;
     line-height:1.5;
 }
@@ -329,21 +336,21 @@ a.button.secondary {
 			background-image:url(images/promo-largo.jpg);
 
 			.overlay {
-				background-color:transparentize($accent5,.2);
+				background-color:transparentize($accent5,.1);
 			}
 		}
 		&.promo-revenue {
 			background-image:url(images/promo-revenue.jpg);
 
 			.overlay {
-				background-color:transparentize($primary,.2);
+				background-color:transparentize($primary,.1);
 			}
 		}
 		&.promo-custom {
 			background-image:url(images/promo-custom.jpg);
 
 			.overlay {
-				background-color:transparentize($accent7,.2);
+				background-color:transparentize($accent7,.1);
 			}
 		}
 
@@ -458,6 +465,7 @@ a.button.secondary {
 			// 	color:$white;
 			// 	text-transform: uppercase;
 			// }
+			padding:2em 3em;
 
 			p {
 				font-size:130%;
@@ -490,11 +498,19 @@ a.button.secondary {
 	}
 
 	>div {
-		padding:2em 3em;
+		padding:4em 3em;
 	}
 }
 
-input[type="button"], input[type="reset"], input[type="submit"] {
+input[type="text"], 
+input[type="email"] {
+	padding: .5em;
+    font-size: 1.25em;
+}
+
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
     //-webkit-appearance: button;
     cursor: pointer;
     font-size: 1em;
@@ -508,7 +524,12 @@ input[type="button"], input[type="reset"], input[type="submit"] {
 }
 
 input[type="submit"] {
-	max-width:200px;
+	width: auto;
+    text-align: left;
+    padding: 0 1em;
+    font-size: 1.25em;
+    line-height: 2.6;
+    margin-left: 1px;
 
 	&:hover {
 		border:none;
@@ -517,8 +538,13 @@ input[type="submit"] {
 }
 
 #featured-blogs {
+	h3 {
+	    font-size: 2em;
+	    margin: 0;
+	}
+
 	h4 {
-		margin-top:0;
+		margin:0;
 	}
 
 	.wp-post-image {
@@ -530,11 +556,11 @@ input[type="submit"] {
 	background-color:$accent2;
 
 	.inner {
-		padding:3em;
+		padding:5em 3em 3em;
 
 		.button {
 			display:block;
-			max-width:250px;
+			max-width:280px;
 
 			&:hover {
 				background-color: $primary;
@@ -563,9 +589,15 @@ input[type="submit"] {
 .page-template-page-capabilities,
 .page-template-page-projects,
 .page-template-page-showcase {
-	.entry-content p {
-		font-size: 1.5em;
-		margin: 0;
+	h1.entry-title {
+	    font-size: 1em;
+	    margin:0;
+	    text-transform: uppercase;
+	    display: inline-block;
+	}
+	.entry-content .lead-in {
+		font-size: 2em;
+		margin: 0 0 1em 0;
 		color:$black;
 	}
 	.flex-grid {
@@ -578,8 +610,97 @@ input[type="submit"] {
 	}
 }
 
+.page-template-page-capabilities {
+	#capability-promos {
+	    border-top:2px solid $black;
+	    border-bottom:2px solid $black;
+
+	    border-right:2px solid $black;
+	    border-left:2px solid $black;
+	}
+	.flex-grid {
+		margin-bottom:0;
+
+	    border-top:2px solid $black;
+	    border-bottom:2px solid $black;
+	}
+	.promo {
+		min-height:300px;
+
+		&.promo-orange {
+			.overlay {
+				background-color:transparentize($accent5,1);
+			}
+		}
+		&.promo-blue {
+			.overlay {
+				background-color:transparentize($primary,1);
+			}
+		}
+		&.promo-pink {
+			.overlay {
+				background-color:transparentize($accent7,1);
+			}
+		}
+		&.promo-green {
+			.overlay {
+				background-color:transparentize($accent2,1);
+			}
+		}
+	}
+	.capability {
+		display:block;
+		width: 100%;
+		background-color: transparent;
+		color:$black;
+		position:absolute;
+		bottom: 0;
+	    top: 0;
+	    padding: 1em 2em;
+	    border-left:2px solid $black;
+	    border-right:2px solid $black;
+
+		h3 {
+			font-size:1.5em;
+			color:$black;
+		}
+
+		&:hover {
+			background-color: $black;
+			color:$white;
+
+			h3 {
+				color: $white;
+			}
+		}
+
+		ul {
+			padding:0;
+			margin:0;
+			list-style-type: none;
+		}
+	}
+}
+
 .page-template-page-projects {
+
+	// .content section {
+	// 	border: 4px solid $black;
+	// 	border-bottom:none;
+	// 	padding:2em;
+
+	// 	&:last-of-type {
+	// 		border-bottom:4px solid $black;
+	// 	}
+	// }
+	h3, p {
+		margin-top:0;
+	}
 	#largo {
+		border-top:4px solid $black;
+		//padding-top:2em;
+		margin-top:4em;
+
 		img {
 			width:230px;
 			max-width:100%;
@@ -599,14 +720,73 @@ input[type="submit"] {
 		}
 	}
 
-	#plugins {
+	.plugins {
+		border-top:4px solid $black;
+		//padding-top:2em;
+		margin-top:4em;
+
 		img {
 			float:left;
-			max-width:80px;
+			max-width:100px;
 			padding:.25em 1em .25em 0;
 		}
 	}
 
+	h2 {
+		border-bottom: none;
+	    color: white;
+	    display: inline-block;
+	    font-size: 1em;
+	    margin-left: auto;
+	    background: black;
+	    padding: .5em .75em;
+	    letter-spacing: .025em;
+	    margin-bottom: 2em;
+	    margin-top: 0;
+	}
+
+}
+.page-template-page-team { 
+	#team-photos {
+		.flex-grid{
+			margin:0;
+		}
+
+		.teammember {
+			position:relative;
+			padding:0;
+			margin:0;
+
+			img {
+				display:block;
+			}
+
+			.overlay {
+				position:absolute;
+			    background: $primary;
+			    top: 0;
+			    left: 0;
+			    bottom: 0;
+			    right: 0;
+			    opacity: 0;
+
+				span {
+					top:50%;
+					left:50%;
+					transform:translate(-50%,-50%);
+					color:$white;
+					font-weight: bold;
+					position: absolute;
+					font-size:2em;
+				}
+
+				&:hover {
+					opacity:.8;
+					cursor: pointer;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 960px) {
