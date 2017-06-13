@@ -40,17 +40,29 @@ get_header(); ?>
 
 		<section class="section">
 
-			<div class="case" style="background-image:url('<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/labs/images/showcase/case1.jpg');">
-				<a href="http://projects.chicagoreporter.com/settlements/"><div class="overlay"><span class="case-title">Settling for Misconduct | The Chicago Reporter</span><span class="case-description">News Application Design &amp; Development</span></div></a>
-			</div>
+			<div class="case"><div class="inner" style="background-image:url('<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/labs/images/showcase/case1.jpg');">
+				<a href="http://projects.chicagoreporter.com/settlements/"><div class="overlay"><span><span class="case-title">The Chicago Reporter: Settling for Misconduct</span><span class="case-description">News Application Design &amp; Development</span></span></div></a>
+			</div></div>
 
-			<div class="case" style="background-image:url('<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/labs/images/showcase/case2.jpg');">
-				<a href="http://publicsource.org/"><div class="overlay"><span class="case-title">Public Source</span><span class="case-description">WordPress Design &amp; Development</span></div></a>
-			</div>
+			<div class="case"><div class="inner" style="background-image:url('<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/labs/images/showcase/case2.jpg');">
+				<a href="http://wisconsinwatch.org/"><div class="overlay"><span><span class="case-title">Wisconsin Watch</span><span class="case-description">WordPress Design &amp; Development</span></span></div></a>
+			</div></div>
 
-			<div class="case" style="background-image:url('<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/labs/images/showcase/case3.jpg');">
-				<a href="https://fresh-energy.org/"><div class="overlay"><span class="case-title">Fresh Energy</span><span class="case-description">WordPress Design &amp; Development</span></div></a>
-			</div>
+			<div class="case"><div class="inner" style="background-image:url('<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/labs/images/showcase/case3.jpg');">
+				<a href="http://voiceofoc.org/"><div class="overlay"><span><span class="case-title">Voice of OC</span><span class="case-description">WordPress Development</span></span></div></a>
+			</div></div>
+
+			<div class="case"><div class="inner" style="background-image:url('<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/labs/images/showcase/case4.jpg');">
+				<a href="http://therivardreport.com/"><div class="overlay"><span><span class="case-title">The Rivard Report</span><span class="case-description">WordPress Design &amp; Development</span></span></div></a>
+			</div></div>
+
+			<div class="case"><div class="inner" style="background-image:url('<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/labs/images/showcase/case5.jpg');">
+				<a href="https://fresh-energy.org/"><div class="overlay"><span><span class="case-title">Fresh Energy</span><span class="case-description">WordPress Design &amp; Development</span></span></div></a>
+			</div></div>
+
+			<div class="case"><div class="inner" style="background-image:url('<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/labs/images/showcase/case6.jpg');">
+				<a href="https://ctmirror.org/2017/05/22/english-learners-struggling-ct-schools-ignore-a-proven-path/"><div class="overlay"><span><span class="case-title">CT Mirror</span><span class="case-description">WordPress Development</span></span></div></a>
+			</div></div>
 			
 		</section>
 	</main><!-- #main -->

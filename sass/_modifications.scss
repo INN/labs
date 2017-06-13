@@ -598,7 +598,7 @@ input[type="submit"] {
 .page-template-page-showcase,
 .page-template-page-team {
 	#primary {
-	    margin-top: 30px;
+	    margin-top: 33px;
 	}
 	h1.entry-title {
 	    font-size: 1em;
@@ -832,37 +832,51 @@ input[type="submit"] {
 }
 
 .page-template-page-showcase { 
-	section {
+	#primary section {
 		display:flex;
 		flex-wrap:wrap;
+		padding:1vw;
+		background-color:#181a2d;
 	}
 	.case {
-		position:relative;
-		padding:0;
-		margin:0;
-		background-size:cover;
-		background-position: top left;
-		background-repeat: no-repeat;
-		width:50vw;
+		width:32.666vw;
 		height:50vh;
 		display:flex;
-		padding:1em;
-		background-color:$primary;
+		padding:1vw;
 
-		img {
-			display:block;
+		>div {
+			position:relative;
+			padding:0;
+			margin:0;
+			background-size:cover;
+			background-position: top left;
+			background-repeat: no-repeat;
+			width:100%;
+			-webkit-transition: background-position 2s ease-in-out;
+		    -moz-transition: background-position 2s ease-in-out;
+		    -ms-transition: background-position 2s ease-in-out;
+		    -o-transition: background-position 2s ease-in-out;
+		    transition: background-position 2s ease-in-out;
 		}
 
 		.overlay {
 			position:absolute;
-		    background: $primary;
+		    background: $black;
 		    top: 0;
 		    left: 0;
 		    bottom: 0;
 		    right: 0;
-		    opacity: 0;
+		    opacity: 0;		    
 
-			span {
+			-webkit-transition: opacity 500ms ease-in-out;
+		    -moz-transition: opacity 500ms ease-in-out;
+		    -ms-transition: opacity 500ms ease-in-out;
+		    -o-transition: opacity 500ms ease-in-out;
+		    transition: opacity 500ms ease-in-out;
+		    -webkit-transition-delay: 1s; /* Safari */
+    		transition-delay: 1s;
+
+			>span {
 				top:50%;
 				left:50%;
 				transform:translate(-50%,-50%);
@@ -870,11 +884,32 @@ input[type="submit"] {
 				font-weight: bold;
 				position: absolute;
 				font-size:1.5em;
+				text-align:center;
+				min-width:70%;
+
+				span {
+					display: block;
+
+					&:last-of-type {
+						text-transform:uppercase;
+						font-size:.75em;
+						margin-top:1em;
+						font-weight:normal;
+					}
+				}
+			}
+		}		
+
+	    &:hover {
+			background-color:$primary;
+			cursor: pointer;
+
+			>div {
+				background-position:0px -500px;
 			}
 
-			&:hover {
-				opacity:.8;
-				cursor: pointer;
+			.overlay {
+				opacity:.95;
 			}
 		}
 	}
