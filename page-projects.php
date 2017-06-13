@@ -42,7 +42,7 @@ get_header(); ?>
 							<h3>Largo: The WordPress Theme for Publishers</h3>
 							<!-- <p>Unlike other "news" themes, Largo is built by actual news nerds.</p> -->
 							<ul>
-							<li><strong>Powerful Publishing Tools:</strong> Largo includes capabiities for curated content, editorial series, author management, transparent revisions, and much, much more.</li>
+							<li><strong>Powerful Publishing Tools:</strong> Largo enables curated content, editorial series, author management, transparent revisions, and much, much more.</li>
 							<li><strong>Responsive Design:</strong> Clean, modern and mobile first, Largo is designed to look great and function seamlessly on any type of device.</li>
 							<li><strong>Developer Friendly:</strong> With logical organization, extensive documentation, and a sample child theme, it's easy to extend Largo to fit your exact needs.</li>
 							</ul>
