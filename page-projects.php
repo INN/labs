@@ -39,16 +39,13 @@ get_header(); ?>
 							<a href="//largo.inn.org"><img src="https://largo.inn.org/wp-content/themes/largoproject/homepages/assets/img/logos/largo-project-logo.svg" alt="Largo logo" /></a>
 						</div>
 						<div>
-							<h3>Largo is <em>the</em> WordPress theme for news websites.</h3>
-							<p>More than 150 organizations currently use Largo as their primary website solution, and INN is committed to maintaining and improving the theme for the benefit of nonprofit news organizations.</p>
-
-							<p><strong>Largo Features:</strong></p>
+							<h3>Largo: The WordPress Theme for Publishers</h3>
+							<!-- <p>Unlike other "news" themes, Largo is built by actual news nerds.</p> -->
 							<ul>
-								<li><strong>Powerful Publishing Tools:</strong> Unlike other WordPress "news" themes, Largo is built by real news nerds. We obsess about workfow, too.</li>
-								<li><strong>Responsive Design:</strong> Largo is clean, modern, and mobile first &mdash; it's designed to look great on any device.</li>
-								<li><strong>Developer Friendly:</strong> Logical organization, documentation, and a sample child theme make it easy to use Largo for your next project.</li>
+							<li><strong>Powerful Publishing Tools:</strong> Largo includes capabiities for curated content, editorial series, author management, transparent revisions, and much, much more.</li>
+							<li><strong>Responsive Design:</strong> Clean, modern and mobile first, Largo is designed to look great and function seamlessly on any type of device.</li>
+							<li><strong>Developer Friendly:</strong> With logical organization, extensive documentation, and a sample child theme, it's easy to extend Largo to fit your exact needs.</li>
 							</ul>
-
 							<p>Visit the main <a href="//largo.inn.org">Largo project site</a> for more information.</p>
 						</div>
 					</div>
@@ -61,12 +58,12 @@ get_header(); ?>
 						<div>
 							<h3><a href="https://wordpress.org/plugins/doubleclick-for-wp/" target="_blank">DoubleClick for WordPress</a></h3>
 							<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/labs/images/plugins/double-click.svg" alt="plugin-icon" />
-							<p>DoubleClick for WordPress gives site administrators an easy way to serve DFP inventory on their WordPress site.</p>
+							<p>Serve ads via DoubleClick for Publishers on your WordPress site with this user-friendly widget.</p>
 						</div>
 						<div>
 							<h3><a href="https://wordpress.org/plugins/super-cool-ad-inserter/" target="_blank">Super Cool Ad Inserter</a></h3>
 							<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/labs/images/plugins/scaip.svg" alt="plugin-icon" />
-							<p>This plugin allows you to insert ads, newsletter signups, and other calls to action into post content at set intervals.</p>
+							<p>Automatically insert ads, donation messaging, and other calls to action into posts at set intervals.</p>
 						</div>				
 						<!-- <div>
 							<h3><a href="https://wordpress.org/plugins/link-roundups/" target="_blank">Link Roundups</a></h3>
@@ -81,7 +78,7 @@ get_header(); ?>
 						<div>
 							<h3><a href="https://wordpress.org/plugins/pym-shortcode/" target="_blank">Pym Shortcode</a></h3>
 							<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/labs/images/plugins/pym-shortcode.svg" alt="plugin-icon" />
-							<p>This plugin resizes iframes responsively – perfect for embedding interactive graphics within a post.</p>
+							<p>Responsively embed iframes within post content – perfect for interactive graphics.</p>
 						</div>
 						<div>
 							<h3><a href="https://wordpress.org/plugins/news-quiz-shortcode/" target="_blank">News Quiz Shortcode</a></h3>
@@ -91,17 +88,17 @@ get_header(); ?>
 					</div>
 				</section>
 				<section class="plugins">
-					<h2>Better Analytics</h2>
+					<h2>Analytics in Action</h2>
 					<div class="flex-grid grid-wrap">
 						<div>
 							<h3><a href="https://wordpress.org/plugins/no-nonsense-google-analytics/" target="_blank">No-Nonsense Google Analytics</a></h3>
 							<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/labs/images/plugins/no-nonsense.svg" alt="plugin-icon" />
-							<p>No-Nonsense Google Analytics provides a simple way to embed multiple Universal Analytics codes on your site. No dashboard, no reports.</p>
+							<p>A simple way to embed multiple Universal Analytics codes on your site. No dashboard, no reports.</p>
 						</div>
 						<div>
 							<h3><a href="https://wordpress.org/plugins/ga-popular-posts/" target="_blank">Google Analytics Popular Posts</a></h3>
 							<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/labs/images/plugins/popular-posts.svg" alt="plugin-icon" />
-							<p>This plugin queries Google Analytics for pageview data and determines a post's popularity based on publish date and total number of pageviews.</p>
+							<p>Surface your site's most popular posts based on Google Analytics pageview data.</p>
 						</div>
 					</div>
 				</section>				
@@ -116,7 +113,7 @@ get_header(); ?>
 						<div>
 							<h3><a href="https://wordpress.org/plugins/public-media-platform/" target="_blank">Public Media Platform</a></h3>
 							<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/labs/images/plugins/pmp.png" alt="plugin-icon" />
-							<p>Pull great content from the Public Media Platform for use on your WordPress site. <i>Requires a PMP API Key.</i></p>
+							<p>Incorporate content from the Public Media Platform on your WordPress site. <i>Requires a PMP API Key.</i></p>
 						</div>						
 					</div>
 				</section>

@@ -133,7 +133,7 @@ section {
 
 .inner {
 	margin:0 auto;
-	max-width:1052px;
+	max-width:950px;
 	position:relative;
 	padding-top:1px;
 }
@@ -163,7 +163,7 @@ section {
 		}
 		
 		li {
-			width:28%;
+			width:35%;
 			margin: 0 1%;
 			display:inline-block;
 			text-align:center;
@@ -284,6 +284,11 @@ a.button.secondary {
     padding: 4em 3em;
     background-color: $white;
     line-height:1.5;
+
+    h1, h2, h3, h4, h5,
+    .lead-in {
+    	line-height:1.333;
+    }
 }
 .abs-center {
 	position:absolute;
@@ -410,10 +415,10 @@ a.button.secondary {
 		& ~ .promos .detail { transform: translateY(-100%); }
 
 		// Current row, slides to the right of their columns, giving left motion on hover
-		.detail { transform: translateX(100%); }
+		//.detail { transform: translateX(100%); }
 
 		// Current row, next slides, slides to the left of their columns, giving right motion on hover
-		& .promo:hover ~ .promo .detail { transform: translateX(-100%); }
+		//& .promo:hover ~ .promo .detail { transform: translateX(-100%); }
 
 		// Current slide
 		.promo:hover .detail {
@@ -506,6 +511,7 @@ input[type="text"],
 input[type="email"] {
 	padding: .5em;
     font-size: 1.25em;
+    width:25%;
 }
 
 input[type="button"], 
@@ -540,6 +546,7 @@ input[type="submit"] {
 #featured-blogs {
 	h3 {
 	    font-size: 2em;
+		line-height: 1.25;
 	    margin: 0;
 	}
 
@@ -588,7 +595,11 @@ input[type="submit"] {
 
 .page-template-page-capabilities,
 .page-template-page-projects,
-.page-template-page-showcase {
+.page-template-page-showcase,
+.page-template-page-team {
+	#primary {
+	    margin-top: 30px;
+	}
 	h1.entry-title {
 	    font-size: 1em;
 	    margin:0;
@@ -602,6 +613,10 @@ input[type="submit"] {
 	}
 	.flex-grid {
 		margin-bottom:2em;
+
+		&.promos {
+			margin-bottom: 0;
+		}
 	}
 
 	h2 {
@@ -614,9 +629,9 @@ input[type="submit"] {
 	#capability-promos {
 	    border-top:2px solid $black;
 	    border-bottom:2px solid $black;
-
-	    border-right:2px solid $black;
+		border-right:2px solid $black;
 	    border-left:2px solid $black;
+	    margin:3em 0;
 	}
 	.flex-grid {
 		margin-bottom:0;
@@ -625,7 +640,7 @@ input[type="submit"] {
 	    border-bottom:2px solid $black;
 	}
 	.promo {
-		min-height:300px;
+		min-height:280px;
 
 		&.promo-orange {
 			.overlay {
@@ -656,7 +671,7 @@ input[type="submit"] {
 		position:absolute;
 		bottom: 0;
 	    top: 0;
-	    padding: 1em 2em;
+	    padding: .5em 1.5em;
 	    border-left:2px solid $black;
 	    border-right:2px solid $black;
 
@@ -748,6 +763,8 @@ input[type="submit"] {
 }
 .page-template-page-team { 
 	#team-photos {
+		margin-bottom:2em;
+
 		.flex-grid{
 			margin:0;
 		}
@@ -777,13 +794,87 @@ input[type="submit"] {
 					color:$white;
 					font-weight: bold;
 					position: absolute;
-					font-size:2em;
+					font-size:1.5em;
 				}
 
 				&:hover {
 					opacity:.8;
 					cursor: pointer;
 				}
+			}
+		}
+	}
+
+	#promos {
+		h3 {
+			text-align: center;
+			color:$white;
+			font-size:2em;
+			transform:translateY(-100%);
+		}
+
+		h4 {
+			opacity: 1;
+			font-size:1.5em;
+			margin-bottom: 0;
+		}
+	}
+
+	#featured-blogs {
+		.flex-grid {
+			margin-bottom: 4em;
+
+			&:last-of-type {
+				margin-bottom:2em;
+			}
+		}
+	}
+}
+
+.page-template-page-showcase { 
+	section {
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.case {
+		position:relative;
+		padding:0;
+		margin:0;
+		background-size:cover;
+		background-position: top left;
+		background-repeat: no-repeat;
+		width:50vw;
+		height:50vh;
+		display:flex;
+		padding:1em;
+		background-color:$primary;
+
+		img {
+			display:block;
+		}
+
+		.overlay {
+			position:absolute;
+		    background: $primary;
+		    top: 0;
+		    left: 0;
+		    bottom: 0;
+		    right: 0;
+		    opacity: 0;
+
+			span {
+				top:50%;
+				left:50%;
+				transform:translate(-50%,-50%);
+				color:$white;
+				font-weight: bold;
+				position: absolute;
+				font-size:1.5em;
+			}
+
+			&:hover {
+				opacity:.8;
+				cursor: pointer;
 			}
 		}
 	}
