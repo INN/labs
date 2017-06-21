@@ -1006,6 +1006,12 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 768px) {
+	#primary .main-navigation {
+		display:none;
+	}
+	#masthead .main-navigation {
+		display:block!important;
+	}
 	#mobile-nav {
 		padding-top: 160px;
 	}
