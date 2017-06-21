@@ -61,35 +61,35 @@ get_header(); ?>
 
 			<section id="promos" class="promos section flex-grid">
 				<div class="promo promo-largo">
-					<a href="/office-hours">
+					<a href="https://docs.google.com/spreadsheets/d/1p-twn2D8oow7vXBfkcdYcZnVA4z8Q42OMs77KlHwf-g/edit#gid=0">
 						<div class="overlay"></div>
 						<h3 class="abs-center">Office Hours</h3>
 						<div class="detail">
 							<h4>Office Hours</h4>
 							<p>Every Friday from 2-3 p.m. ET we hold open office hours via Zoom video calls where anyone can come and talk to our team about recently launched or in-progress projects, bounce ideas off us, or talk about general design, tech, or product questions. </p>
-							<div class="button">Learn More</div>
+							<a href="https://docs.google.com/spreadsheets/d/1p-twn2D8oow7vXBfkcdYcZnVA4z8Q42OMs77KlHwf-g/edit#gid=0" class="button">Sign Up</a>
 						</div>
 					</a>
 				</div>
 				<div class="promo promo-revenue">
-					<a href="/newsletter">
+					<a href="http://us1.campaign-archive2.com/home/?u=81670c9d1b5fbeba1c29f2865&id=1476113985">
 						<div class="overlay"></div>
 						<h3 class="abs-center">Nerd Alert!</h3>
 						<div class="detail">
 							<h4>Newsletter</h4>
 							<p>Every week our team shares what we’ve been reading, projects we’ve launched, work of other teams that we’re excited about and other fun stuff. Don’t miss this weekly dose of awesome in your inbox every Friday morning.</p>
-							<div class="button">Learn More</div>
+							<a href="http://us1.campaign-archive2.com/home/?u=81670c9d1b5fbeba1c29f2865&id=1476113985" class="button">View Archive</a>
 						</div>
 					</a>
 				</div>
 				<div class="promo promo-custom">
-					<a href="/book-club">
+					<a href="/category/book-club">
 						<div class="overlay"></div>
 						<h3 class="abs-center">Book Club</h3>
 						<div class="detail">
 							<h4>Book Club</h4>
 							<p>Every month we pick a book, read it and then host a public Google Hangout to discuss it. Unless we’re at a conference or otherwise need to change the date, the meetings will be at 1 p.m. ET on the second Wednesday of each month. </p>
-							<div class="button">Learn More</div>
+							<a href="/category/book-club" class="button">Learn More</a>
 						</div>
 					</a>
 				</div>
@@ -145,7 +145,7 @@ get_header(); ?>
 			<section  id="featured-blogs" class="section">
 				<div class="inner content">
 					<?php
-					$args = array( 'numberposts' => 3 );
+					$args = array( 'numberposts' => 1 );
 					$lastposts = get_posts( $args );
 					foreach($lastposts as $post) : setup_postdata($post); ?>
 

@@ -87,7 +87,7 @@ get_header(); ?>
 						<div class="detail">
 							<h3>Largo: The News Theme</h3>
 							<p>Get your publication off the ground with Largo, our WordPress theme for new organizations. Whether you publish frequently or sparingly, with in-depth reports or new briefs, you can customize Largo to fit your publication's individual needs. <!-- Take your site to the next level with Largo+, a set of publishing plugins that improve content creation, ease distribution, and enhance visual presentation. --></p>
-							<div class="button">Learn More</div>
+							<a href="/projects" class="button">Learn More</a>
 						</div>
 					</a>
 				</div>
@@ -98,7 +98,7 @@ get_header(); ?>
 						<div class="detail">
 							<h3>Analytics &amp; Advertising</h3>
 							<p>Need to engage your audience? Build revenue? Improve SEO? We can teach you how to understand your analytics and recommend proven solutions to connect you with your community.</p>
-							<div class="button">Learn More</div>
+							<a href="/capabilities" class="button">Learn More</a>
 						</div>
 					</a>
 				</div>
@@ -109,7 +109,7 @@ get_header(); ?>
 						<div class="detail">
 							<h3>Partner With Us</h3>
 							<p>Let's make news better. With years of experience in newsroom tech, our team of technologists can help build your next news app, redesign your website, and collaborate with you to build something completely new.</p>
-							<div class="button">Learn More</div>
+							<a href="/capabilities" class="button">Learn More</a>
 						</div>
 					</a>
 				</div>

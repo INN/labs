@@ -645,8 +645,7 @@ input[type="submit"] {
 	    border-bottom:2px solid $black;
 	}
 	.promo {
-		min-height:280px;
-
+	
 		&.promo-orange {
 			.overlay {
 				background-color:transparentize($accent5,1);
@@ -836,6 +835,10 @@ input[type="submit"] {
 	}
 }
 
+@media screen and (min-width: 768px) {
+
+}
+
 .page-template-page-showcase { 
 	#primary section {
 		display:flex;
@@ -1003,14 +1006,20 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 768px) {
+	#mobile-nav {
+		padding-top: 160px;
+	}
 	.site-header .tab {
 	    margin: 0;
-	    max-width: 100%;
+	    margin-top:-2px;
 	    padding-top: 0;
 
 	    img {
 		    max-width: 170px;
 		}
+	}
+	.page-template-page-showcase .case {
+	    width: 100%;
 	}
 
 	.highlight-line {
@@ -1022,6 +1031,7 @@ input[type="submit"] {
 	}
 	.home #front li {
 	    width: 43%;
+	    font-size: .85em;
 	}
 	#intro {
 
@@ -1042,20 +1052,32 @@ input[type="submit"] {
 	}
 	.promos {
 		flex-wrap:wrap;
-	}
-	.promo {
-		min-width:100%;
 
-		.detail {
-			transition: all 0s ease-in-out, visibility 0s 0s;
-			display:none;
-		}
+		.promo {
+			min-width:100%;
+			min-height:290px;
 
-		&:hover {
+			>a {
+				pointer-events: none;
+	       		cursor: default;
+			}
+
 			.detail {
-				display:block;
+				transition: all 0s ease-in-out, visibility 0s 0s;
+				display:none;
+			}
+
+			&:hover {
+				.detail {
+					display:block;
+				}
 			}
 		}
+	}
+	
+	#process > div > div {
+	    padding: 1em 2em;
+	    font-size: 80%;
 	}
 	#featured-blogs .flex-grid {
 	    flex-wrap: wrap;
@@ -1068,8 +1090,45 @@ input[type="submit"] {
 			font-size: 1.25em;
 		}
 	}
+	.page-template-page-projects {
+		#largo .flex-grid div:first-of-type {
+			display:none;
+		}
+		.plugins .flex-grid {
+		    flex-wrap: wrap;
+		    div {
+			    min-width: 100%;
+			    padding: 0;
+			}
+		}
+		
+	}
+	.page-template-page-capabilities .promo {
+	    min-height: 0;
+	}
+	#capability-promos {
+		display:none;
+		margin:0;
+
+		.flex-grid {
+			display:block;
+			flex-wrap:wrap;
+		}
+
+		.promo {
+			overflow: visible;
+    		position: static;
+		}
+	}
+	input[type="text"], input[type="email"] {
+		margin-bottom:.25em;
+	}
 }
 @media screen and (max-width: 500px) {
+
+	#global-menu {
+		font-size:70%;
+	}
 
 	.highlight-line {
 		font-size:1.6em;
@@ -1081,5 +1140,13 @@ input[type="submit"] {
 	.home #front li {
 	    width: 70%;
 	    margin-top:.5em;
+	}
+}
+@media screen and (max-width: 420px) {
+
+	.highlight-line {
+		font-size:1.25em;
+		line-height:2;
+		padding:.25em;
 	}
 }
