@@ -1053,6 +1053,18 @@ input[type="submit"] {
 	    	margin-bottom:.5em;
 	    }
 	}
+	.home #learn-more p,
+	.page-template-page-capabilities .entry-content p, 
+	.page-template-page-projects .entry-content p, 
+	.page-template-page-showcase .entry-content p {
+	    font-size: 1.125em;
+	}
+	.page-template-page-capabilities .entry-content .lead-in, 
+	.page-template-page-projects .entry-content .lead-in, 
+	.page-template-page-showcase .entry-content .lead-in, 
+	.page-template-page-team .entry-content .lead-in {
+		font-size: 1.5em;
+	}
 	.content {
 		padding:1.5em;
 	}
