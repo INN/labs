@@ -52,7 +52,12 @@ get_header(); ?>
 			</section>			  
 
 			<nav class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'largo' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><svg version="1.1"x="0px" y="0px"
+	 viewBox="0 0 103 71" style="enable-background:new 0 0 103 71;">
+<rect class="st0" width="103" height="15"/>
+<rect y="28" class="st0" width="103" height="15"/>
+<rect y="56" class="st0" width="103" height="15"/>
+</svg></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav> <!-- #site-navigation -->
 

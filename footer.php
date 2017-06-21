@@ -39,5 +39,24 @@
 <?php wp_footer(); ?>
 
 </body>
+
+<script>
+jQuery(document).ready(function(){
+	var $ = jQuery;
+
+    $('.menu-toggle').click(function(){
+    	$('#mobile-nav').toggle();
+    })
+
+    $(document).keyup(function(e) {
+     if (e.keyCode == 27) { // escape key maps to keycode `27`
+        if ( $('#mobile-nav').is(":visible") ) {
+        	$('#mobile-nav').toggle();
+        }
+    }
+});
+
+});
+</script>
 </html>
 	

@@ -33,9 +33,25 @@
 			    	<img src="<?php bloginfo('stylesheet_directory'); ?>/images/labs-logo-white.png" alt="<?php bloginfo( 'name' ); ?>" />
 			    </a>
 			    <nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'largo' ); ?></button>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><svg version="1.1"x="0px" y="0px"
+	 viewBox="0 0 103 71" style="enable-background:new 0 0 103 71;">
+<rect class="st0" width="103" height="15"/>
+<rect y="28" class="st0" width="103" height="15"/>
+<rect y="56" class="st0" width="103" height="15"/>
+</svg></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav> <!-- #site-navigation -->
+				<nav id="mobile-nav">
+					
+					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+						<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 83 83.4" style="enable-background:new 0 0 83 83.4;">
+						<rect x="-9.8" y="34.2" transform="matrix(0.7071 0.7071 -0.7071 0.7071 41.7193 -17.2807)" class="st0" width="103" height="15"/>
+						<rect x="-9.8" y="34.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -17.2807 41.7193)" class="st0" width="103" height="15"/>
+						</svg>
+					</button>
+
+				</nav>
 			
 		</div><!-- .site-branding -->
 

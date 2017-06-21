@@ -60,7 +60,7 @@ jQuery(document).ready(function(){
 
 jQuery(window).resize(function(){  
 	win_height = jQuery(window).height();
-	setStickyNav(jQuery);
+	setStickyNav(win_height);
 });
 
 var latestKnownScrollY = 0,
