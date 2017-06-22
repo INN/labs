@@ -637,6 +637,10 @@ input[type="submit"] {
 		border-right:2px solid $black;
 	    border-left:2px solid $black;
 	    margin:3em 0;
+
+	    .promos .promo {
+		    min-height: 280px;
+		}
 	}
 	.flex-grid {
 		margin-bottom:0;
