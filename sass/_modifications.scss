@@ -1125,21 +1125,22 @@ input[type="submit"] {
 		}
 		
 	}
-	.page-template-page-capabilities .promo {
-	    min-height: 0;
-	}
-	#capability-promos {
-		display:none;
-		margin:0;
+	.page-template-page-capabilities {
+		#capability-promos {
+			margin:0;
+			border:none;
 
-		.flex-grid {
-			display:block;
-			flex-wrap:wrap;
-		}
+			.flex-grid {
+				display:block;
+				flex-wrap:wrap;
+				border-bottom:0;
+			}
 
-		.promo {
-			overflow: visible;
-    		position: static;
+			.promo {
+				overflow: visible;
+	    		position: relative;
+			    border-bottom: 2px solid black;
+			}
 		}
 	}
 	input[type="text"], input[type="email"] {
