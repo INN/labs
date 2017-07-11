@@ -42,7 +42,7 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav> <!-- #site-navigation -->
 				<nav id="mobile-nav">
-					
+
 					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 						<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 83 83.4" style="enable-background:new 0 0 83 83.4;">
@@ -52,10 +52,10 @@
 					</button>
 
 				</nav>
-			
+
 		</div><!-- .site-branding -->
 
-		
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

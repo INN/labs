@@ -24,7 +24,7 @@ get_header(); ?>
 	    image_ids.splice(index, 1);
 	}
 	var url_1 = '/wp-content/themes/labs/images/INN-Labs-Hero-0' + id + '.svg';
-	var url_2 = '/wp-content/themes/labs/images/INN-Labs-Hero-0' + image_ids[Math.floor(Math.random()*image_ids.length)] + '.svg'; 
+	var url_2 = '/wp-content/themes/labs/images/INN-Labs-Hero-0' + image_ids[Math.floor(Math.random()*image_ids.length)] + '.svg';
 	document.write('<style>#hero-container{background-image:url(' + url_1 + ');} #villian-container{background-image:url(' + url_2 + ');}</style>');
 </script>
 
@@ -33,7 +33,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section id="front" class="section transparent">
-			
+
 				<div class="inner">
 					<div class="abs-center">
 						<!--INN Labs works with newsroom technologists to build the future of nonprofit news.-->
@@ -49,7 +49,7 @@ get_header(); ?>
 						</ul>
 					</div>
 				</div>
-			</section>			  
+			</section>
 
 			<nav class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><svg version="1.1"x="0px" y="0px"
@@ -75,7 +75,7 @@ get_header(); ?>
 
 <!-- 			<section id="how-we-help" class="section">
 				<div class="inner">
-					<p><strong>Nerd Alert!</strong> Sign up for the INN Labs newsletter. </p>					
+					<p><strong>Nerd Alert!</strong> Sign up for the INN Labs newsletter. </p>
 				</div>
 			</section> -->
 
@@ -135,14 +135,14 @@ get_header(); ?>
 					    <div id="mc_embed_signup_scroll">
 					    	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
 							<input type="email" placeholder="Email Address" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-						
+
 							<label for="mce-FNAME">First Name </label>
 							<input type="text" placeholder="First Name" value="" name="FNAME" class="" id="mce-FNAME">
-						
+
 
 							<label for="mce-LNAME">Last Name </label>
 							<input type="text" placeholder="Last Name" value="" name="LNAME" class="" id="mce-LNAME">
-						
+
 							<div class="mc-field-group input-group" style="display:none;">
 							    <strong>Project Updates </strong>
 							    <ul><li><input type="checkbox" value="1" name="group[4097][1]" id="mce-group[4097]-4097-0"><label for="mce-group[4097]-4097-0">Largo</label></li>
@@ -192,5 +192,3 @@ get_header(); ?>
 <?php
 //get_sidebar();
 get_footer();
-
-

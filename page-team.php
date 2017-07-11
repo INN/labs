@@ -114,14 +114,14 @@ get_header(); ?>
 					    <div id="mc_embed_signup_scroll">
 					    	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
 							<input type="email" placeholder="Email Address" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-						
+
 							<label for="mce-FNAME">First Name </label>
 							<input type="text" placeholder="First Name" value="" name="FNAME" class="" id="mce-FNAME">
-						
+
 
 							<label for="mce-LNAME">Last Name </label>
 							<input type="text" placeholder="Last Name" value="" name="LNAME" class="" id="mce-LNAME">
-						
+
 							<div class="mc-field-group input-group" style="display:none;">
 							    <strong>Project Updates </strong>
 							    <ul><li><input type="checkbox" value="1" name="group[4097][1]" id="mce-group[4097]-4097-0"><label for="mce-group[4097]-4097-0">Largo</label></li>
@@ -173,5 +173,3 @@ get_header(); ?>
 <?php
 //get_sidebar();
 get_footer();
-
-
