@@ -19,18 +19,25 @@ get_header(); ?>
 
 			<section class="section">
 				<div class="inner content">
-					<?php
-					while ( have_posts() ) : the_post();
+					<article id="post-2" class="post-2 page type-page status-publish hentry">
+						<header class="entry-header">
+							<h1 class="entry-title">Community</h1>
+						</header><!-- .entry-header -->
 
-						get_template_part( 'template-parts/content', 'page' );
-
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;
-
-					endwhile; // End of the loop.
-					?>
+						<div class="entry-content">
+							<div class="lead-in">INN Labs is the product and technology arm of the <a href="//inn.org">Institute for Nonprofit News</a>.</div>
+							<p>INN is a nonprofit supporting other nonprofits. We are:</p>
+							<section id="team-photos">
+								<div class="flex-grid"><span class="teammember"><img class="size-medium wp-image-111063" src="https://inn.org/wp-content/uploads/2016/02/JSMITH-INN-336x336.jpg" alt="Julia Smith" width="336" height="336"><a href="/meet-the-team#julia"><span class="overlay"><span>Julia</span></span></a></span><span class="teammember"><img class="size-medium wp-image-111063" src="https://inn.org/wp-content/uploads/2016/08/RC-e1470591530253-336x336.jpg" alt="RC Lations" width="336" height="336"><a href="/meet-the-team#rc"><span class="overlay"><span>RC</span></span></a></span><span class="teammember"><img class="size-medium wp-image-111063" src="https://inn.org/wp-content/uploads/2017/01/kay-1-336x336.jpg" alt="Kay Lima" width="336" height="336"><a href="/meet-the-team#kay"><span class="overlay"><span>Kay</span></span></a></span><span class="teammember"><img class="size-medium wp-image-106850" src="https://inn.org/wp-content/uploads/2014/05/senior_photo1-336x336.jpg" alt="ben keith" width="336" height="336"><a href="/meet-the-team#ben"><span class="overlay"><span>Ben</span></span></a></span><span class="teammember"><img class="size-medium wp-image-106850" src="https://inn.org/wp-content/uploads/2014/05/GabeHongsdusit-336x336.png" alt="gabriel hongsdusit" width="336" height="336"><a href="/meet-the-team#gabe"><span class="overlay"><span>Gabe</span></span></a></span></div>
+							</section>
+							<ul>
+								<li><a href="https://inn.org/about/people/">Sue Cross</a>, Executive Director &amp; CEO</li>
+								<li><a href="https://inn.org/about/people/">Fran Scarlett</a>, Director of Programs</li>
+								<li><a href="https://inn.org/about/people/">Laura Bertocci</a>, Member Coordinator</li>
+							</ul>
+							<p>In addition to <a href="http://innlabs.wpengine.com/showcase/">our work with individual newsrooms</a> and our commitment to developing <a href="http://innlabs.wpengine.com/projects/">open-source publishing tools</a>, we also support our community by sharing expertise and insights through our office hours, newsletter, and community book club.</p>
+						</div><!-- .entry-content -->
+					</article>
 				</div>
 			</section>
 
@@ -145,25 +152,24 @@ get_header(); ?>
 			<section  id="featured-blogs" class="section">
 				<div class="inner content">
 					<?php
-					$args = array( 'numberposts' => 1 );
-					$lastposts = get_posts( $args );
-					foreach($lastposts as $post) : setup_postdata($post); ?>
-
+					while ( have_posts() ) : the_post();
+					?>
 						<div class="flex-grid">
 							<div>
-								<!-- <img src="http://placehold.it/300x200" width="100%"/> -->
 								<?php echo the_post_thumbnail( 'large', array('class' => 'max-three') ); ?>
 							</div>
 							<div>
-								<!-- Should display the most recent ****featured*** post -->
 								<h4><?php get_the_category(); ?></h4>
 								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-								<?php the_excerpt(); ?>
 								<date><?php the_time( 'F j, Y' ); ?></date>
+								<?php the_excerpt(); ?>
 							</div>
 
 						</div>
-					<?php endforeach; ?>
+					<?php
+					endwhile; // End of the loop.
+					the_posts_navigation();
+					?>
 				</div>
 			</section>
 

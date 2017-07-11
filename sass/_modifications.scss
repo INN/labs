@@ -155,13 +155,13 @@ section {
 		    font-size: 1.75em;
 		    margin: 0;
 		}
-		
+
 		ul {
 			list-style-type: none;
 			padding:0;
 			margin:2.5em 12% 4.5em 12%;
 		}
-		
+
 		li {
 			width:35%;
 			margin: 0 1%;
@@ -368,7 +368,7 @@ a.button.secondary {
 			position: absolute;
 			top: 0; right: 0; bottom: 0; left: 0;
 
-			/* 
+			/*
 			Visibility delay gives the previously hovered element time to slide out before disappearing.
 			Remove the `visibility` transition to slide in current element without sliding out previous element
 			*/
@@ -444,7 +444,7 @@ a.button.secondary {
 		top:-4px;
 		right:-4px;
 		bottom:-4px;
-		left:-4px;		
+		left:-4px;
 		background-image:url(/wp-content/themes/labs/images/stickies-sm.jpg);
 		background-size:cover;
 		background-position:center center;
@@ -462,7 +462,7 @@ a.button.secondary {
 		-o-filter: blur(0);
 		-ms-filter: blur(0);
 		filter: blur(0);
-		
+
 		>div {
 			// background-color:$black;
 
@@ -507,15 +507,15 @@ a.button.secondary {
 	}
 }
 
-input[type="text"], 
+input[type="text"],
 input[type="email"] {
 	padding: .5em;
     font-size: 1.25em;
     width:25%;
 }
 
-input[type="button"], 
-input[type="reset"], 
+input[type="button"],
+input[type="reset"],
 input[type="submit"] {
     //-webkit-appearance: button;
     cursor: pointer;
@@ -601,7 +601,7 @@ input[type="submit"] {
 .page-template-page-capabilities,
 .page-template-page-projects,
 .page-template-page-showcase,
-.page-template-page-team {
+.blog {
 	#primary {
 	    margin-top: 33px;
 	}
@@ -649,7 +649,7 @@ input[type="submit"] {
 	    border-bottom:2px solid $black;
 	}
 	.promo {
-	
+
 		&.promo-orange {
 			.overlay {
 				background-color:transparentize($accent5,1);
@@ -769,7 +769,7 @@ input[type="submit"] {
 	}
 
 }
-.page-template-page-team { 
+.blog {
 	#team-photos {
 		margin-bottom:2em;
 
@@ -843,7 +843,7 @@ input[type="submit"] {
 
 }
 
-.page-template-page-showcase { 
+.page-template-page-showcase {
 	#primary section {
 		display:flex;
 		flex-wrap:wrap;
@@ -878,7 +878,7 @@ input[type="submit"] {
 		    left: 0;
 		    bottom: 0;
 		    right: 0;
-		    opacity: 0;		    
+		    opacity: 0;
 
 			-webkit-transition: opacity 500ms ease-in-out;
 		    -moz-transition: opacity 500ms ease-in-out;
@@ -910,7 +910,7 @@ input[type="submit"] {
 					}
 				}
 			}
-		}		
+		}
 
 	    &:hover {
 			background-color:$primary;
@@ -1002,7 +1002,7 @@ input[type="submit"] {
 		p {
 			font-size:.9em;
 		}
-	} 
+	}
 }
 
 @media screen and (max-width: 960px) {
@@ -1058,14 +1058,14 @@ input[type="submit"] {
 	    }
 	}
 	.home #learn-more p,
-	.page-template-page-capabilities .entry-content p, 
-	.page-template-page-projects .entry-content p, 
+	.page-template-page-capabilities .entry-content p,
+	.page-template-page-projects .entry-content p,
 	.page-template-page-showcase .entry-content p {
 	    font-size: 1.125em;
 	}
-	.page-template-page-capabilities .entry-content .lead-in, 
-	.page-template-page-projects .entry-content .lead-in, 
-	.page-template-page-showcase .entry-content .lead-in, 
+	.page-template-page-capabilities .entry-content .lead-in,
+	.page-template-page-projects .entry-content .lead-in,
+	.page-template-page-showcase .entry-content .lead-in,
 	.page-template-page-team .entry-content .lead-in {
 		font-size: 1.5em;
 	}
@@ -1096,7 +1096,7 @@ input[type="submit"] {
 			}
 		}
 	}
-	
+
 	#process > div > div {
 	    padding: 1em 2em;
 	    font-size: 80%;
@@ -1123,7 +1123,7 @@ input[type="submit"] {
 			    padding: 0;
 			}
 		}
-		
+
 	}
 	.page-template-page-capabilities {
 		#capability-promos {

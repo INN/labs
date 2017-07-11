@@ -178,8 +178,8 @@ get_header(); ?>
 								<!-- Should display the most recent ****featured*** post -->
 								<h4>FROM THE TEAM </h4>
 								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-								<?php the_excerpt(); ?>
 								<date><?php the_time( 'F j, Y' ); ?></date>
+								<?php the_excerpt(); ?>
 							</div>
 						<?php endforeach; ?>
 					</div>
