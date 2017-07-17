@@ -25,17 +25,12 @@ get_header(); ?>
 						</header><!-- .entry-header -->
 
 						<div class="entry-content">
-							<div class="lead-in">INN Labs is the product and technology arm of the <a href="//inn.org">Institute for Nonprofit News</a>.</div>
-							<p>INN is a nonprofit supporting other nonprofits. We are:</p>
-							<section id="team-photos">
-								<div class="flex-grid"><span class="teammember"><img class="size-medium wp-image-111063" src="https://inn.org/wp-content/uploads/2016/02/JSMITH-INN-336x336.jpg" alt="Julia Smith" width="336" height="336"><a href="/meet-the-team#julia"><span class="overlay"><span>Julia</span></span></a></span><span class="teammember"><img class="size-medium wp-image-111063" src="https://inn.org/wp-content/uploads/2016/08/RC-e1470591530253-336x336.jpg" alt="RC Lations" width="336" height="336"><a href="/meet-the-team#rc"><span class="overlay"><span>RC</span></span></a></span><span class="teammember"><img class="size-medium wp-image-111063" src="https://inn.org/wp-content/uploads/2017/01/kay-1-336x336.jpg" alt="Kay Lima" width="336" height="336"><a href="/meet-the-team#kay"><span class="overlay"><span>Kay</span></span></a></span><span class="teammember"><img class="size-medium wp-image-106850" src="https://inn.org/wp-content/uploads/2014/05/senior_photo1-336x336.jpg" alt="ben keith" width="336" height="336"><a href="/meet-the-team#ben"><span class="overlay"><span>Ben</span></span></a></span><span class="teammember"><img class="size-medium wp-image-106850" src="https://inn.org/wp-content/uploads/2014/05/GabeHongsdusit-336x336.png" alt="gabriel hongsdusit" width="336" height="336"><a href="/meet-the-team#gabe"><span class="overlay"><span>Gabe</span></span></a></span></div>
-							</section>
-							<ul>
-								<li><a href="https://inn.org/about/people/">Sue Cross</a>, Executive Director &amp; CEO</li>
-								<li><a href="https://inn.org/about/people/">Fran Scarlett</a>, Director of Programs</li>
-								<li><a href="https://inn.org/about/people/">Laura Bertocci</a>, Member Coordinator</li>
-							</ul>
-							<p>In addition to <a href="http://innlabs.wpengine.com/showcase/">our work with individual newsrooms</a> and our commitment to developing <a href="http://innlabs.wpengine.com/projects/">open-source publishing tools</a>, we also support our community by sharing expertise and insights through our office hours, newsletter, and community book club.</p>
+							<?php
+							$page_post = get_post( get_option( 'page_for_posts' ) );
+							setup_postdata( $page_post );
+							the_content();
+							wp_reset_postdata();
+							?>
 						</div><!-- .entry-content -->
 					</article>
 				</div>
