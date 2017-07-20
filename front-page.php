@@ -65,7 +65,7 @@ get_header(); ?>
 				<div class="inner content">
 					<div id="learn-more" >
 						<!-- <h2>We create robust publishing solutions for nonprofit news organizations.</h2> -->
-						<p>We are a <a href="<?php echo esc_url( home_url( '/' ) ); ?>team">team of technologists</a> who believe in journalism that builds communities, holds the powerful accountable, and encourages civic engagement.</p>
+						<p>We are a <a href="<?php echo esc_url( home_url( '/' ) ); ?>nerds">team of technologists</a> who believe in journalism that builds communities, holds the powerful accountable, and encourages civic engagement.</p>
 						<p>We exist to elevate that work – and we contribute by <a href="<?php echo esc_url( home_url( '/' ) ); ?>our-projects">developing tools</a> and <a href="<?php echo esc_url( home_url( '/' ) ); ?>showcase">tailored news experiences</a> that establish trust, optimize distribution, and tell stories in new and compelling ways. </p>
 						<p>If you're tackling a problem facing independent news, <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact">we want to work with you</a>.</p>
 						<p>Here's how <a href="<?php echo esc_url( home_url( '/' ) ); ?>capabilities">we can help</a>.</p>
