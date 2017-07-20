@@ -90,7 +90,7 @@ get_header(); ?>
 						<h3 class="abs-center">Book Club</h3>
 						<div class="detail">
 							<h4>Book Club</h4>
-							<p>Every month we pick a book, read it and then host a public Google Hangout to discuss it. Unless we’re at a conference or otherwise need to change the date, the meetings will be at 1 p.m. ET on the second Wednesday of each month. </p>
+							<p>Every two months we pick a book, read it, and then host a public Zoom meeting to discuss it. Unless we’re at a conference or otherwise need to change the date, the meetings will be at 1 p.m. ET on the second Wednesday of each month. </p>
 							<a href="/category/book-club" class="button">Learn More</a>
 						</div>
 					</a>
